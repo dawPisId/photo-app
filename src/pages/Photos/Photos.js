@@ -1,10 +1,11 @@
-import Button from '../../components/Button/Button';
+import Grid from '../../components/Grid/Grid'
 import React from 'react';
+import TopSearchBar from '../../components/TopSearchBar/TopSearchBar';
 
 const Photos = () => (
     <div>
-         Your Photos
-         <Button name = "SEARCH"></Button>
+         <TopSearchBar label = "Your Photos"/>
+         <Grid/>
     </div>
   );
   
