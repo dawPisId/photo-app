@@ -14,10 +14,10 @@ export const Container = styled.ul`
   justify-content: flex-end;
   list-style-type: none;
   margin: 0em 2rem;
-  padding 1rem 0rem;
-  a{
-    text-decoration:none;
-    color:black;
+  padding: 1rem 0rem;
+  a {
+    text-decoration: none;
+    color: black;
   }
 `;
 
@@ -37,4 +37,3 @@ export const Logo = styled.li`
   font-size: 1.25rem;
   margin-right: auto;
 `;
-

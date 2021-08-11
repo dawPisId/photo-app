@@ -1,10 +1,10 @@
-import {Icon, Label, Wrapper} from "./Loader.styled"
+import { Icon, Label, Wrapper } from "./Loader.styled";
 
 import React from "react";
 
 const Loader = () => (
   <Wrapper>
-    <Icon style={{ fontSize: "10rem", display: "block"}} />
+    <Icon style={{ fontSize: "10rem", display: "block" }} />
     <Label>Loading</Label>
   </Wrapper>
 );
