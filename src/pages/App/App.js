@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Albums from "../Albums/Albums";
-import Loader from "../../components/Loader/Loader";
 import NavBar from "../../components/NavBar/NavBar";
 import Photos from "../Photos/Photos";
 import React from "react";
@@ -21,7 +20,6 @@ const App = () => (
         <Route path="/albums" component={Albums} />
         <Route path="/profile/:number" />
       </Switch>
-      <Loader />
     </Layout>
   </BrowserRouter>
 );

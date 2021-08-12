@@ -17,6 +17,10 @@ export const rotate = keyframes`
 export const Icon = styled(CachedIcon)`
   animation: ${rotate} 2s linear infinite;
   margin: auto;
+  &.MuiSvgIcon-root {
+    font-size:10rem;
+    display:block;
+  }
 `;
 
 export const Label = styled.div`

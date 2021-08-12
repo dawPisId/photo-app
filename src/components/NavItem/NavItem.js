@@ -1,8 +1,8 @@
-import { Item } from "./NavComponent.styled";
+import { Item } from "./NavItem.styled";
 import { NavLink } from "react-router-dom";
 import React from "react";
 
-const NavComponent = ({ label, link, isExact, icon }) => (
+const NavItem = ({ label, link, isExact, icon }) => (
   <NavLink exact={isExact} to={link}>
     <Item>
       {icon}
@@ -11,4 +11,4 @@ const NavComponent = ({ label, link, isExact, icon }) => (
   </NavLink>
 );
 
-export default NavComponent;
+export default NavItem;

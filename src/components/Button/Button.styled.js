@@ -4,6 +4,7 @@ export const Wrapper = styled.button`
   display: inline-block;
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
+  cursor: pointer;
   font-family: "Roboto", sans-serif;
   background-color: #e5e5e5;
   border: none;

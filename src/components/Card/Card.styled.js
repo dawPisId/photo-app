@@ -6,6 +6,7 @@ export const Layout = styled.div`
   align-items: center;
   background-color: white;
   border-radius: 5px;
+  cursor: pointer;
   box-shadow: 0px 5px 5px grey;
   height: 20rem;
   overflow: hidden;
