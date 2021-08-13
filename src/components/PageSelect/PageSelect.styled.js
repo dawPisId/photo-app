@@ -23,7 +23,11 @@ export const SelectItem = styled.div`
   }
 `;
 
-export const PageCountList = styled.div`
+export const ItemCountWrapper = styled.div`
+  position: relative;
+`;
+
+export const ItemCountButton = styled.div`
   display: inline-flex;
   align-self: center;
   align-items: center;
@@ -38,7 +42,32 @@ export const PageCountList = styled.div`
   }
 `;
 
-export const PageCountButton = styled.button`
+export const ItemCountList = styled.div`
+  font-size: 0.76rem;
+  margin: 0rem;
+  position: absolute;
+  border: 1px solid lightgrey;
+  border-top: none;
+  border-radius: 5px;
+  right: 0px;
+  flex-direction: column;
+  &.active {
+    display: flex;
+  }
+  &.hidden {
+    display: none;
+  }
+`;
+
+export const ItemCountListItem = styled.div`
+  padding: 0.5rem 1.84rem 0.5rem 1.84rem;
+  cursor: pointer;
+  &:hover {
+    background-color: #d9d9d9;
+  }
+`;
+
+export const ItemCountNumber = styled.div`
   display: inline-block;
   padding: 0.5rem 0.5rem 0.5rem 1.5rem;
   background-color: rgba(0, 0, 0, 0);
@@ -49,7 +78,7 @@ export const PageCountButton = styled.button`
   border-radius: 2px;
 `;
 
-export const PageCountLabel = styled.span`
+export const ItemCountLabel = styled.span`
   position: absolute;
   color: grey;
   top: -0.65rem;

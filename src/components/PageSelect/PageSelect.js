@@ -1,149 +1,142 @@
 import {
-  PageCountButton,
-  PageCountLabel,
-  PageCountList,
+  ItemCountButton,
+  ItemCountLabel,
+  ItemCountList,
+  ItemCountListItem,
+  ItemCountNumber,
+  ItemCountWrapper,
   SelectContainer,
   SelectItem,
 } from "./PageSelect.styled";
 import React, { useState } from "react";
+import { changeItemCount, next, prev, range } from "./helpers";
 
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
-//Temporary var to test the component.
-
-const PagesCount = 10;
-
-const range = (start, end) => {
-  let length = end - start + 1;
-  return Array.from({ length }, (_, idx) => idx + start);
-};
-
-const prev = (currentPage, setCurrentPage) => {
-  if (currentPage > 1) {
-    setCurrentPage(currentPage - 1);
-  }
-};
-
-const next = (currentPage, setCurrentPage, pageCount) => {
-  if (currentPage < pageCount) {
-    setCurrentPage(currentPage + 1);
-  }
-};
-
-/*
-TODO: Refactor this function ASAP, set up flags for dots,
-set beginning and end values for numbers in the switch statement and
-put only one return statement after the switch, render stuff there.
-Also, finish up the pageCount dropdown.
-*/
-
 const createPageList = (currentPage, setCurrentPage, pageCount) => {
+  let flags = {
+    leftDots: false,
+    rightDots: false,
+    beginning: 0,
+    end: 0,
+  };
   switch (true) {
-    case pageCount < 8:
-      return (
-        <SelectContainer>
-          <ArrowBackIosIcon onClick={() => prev(currentPage, setCurrentPage)} />
-          {range(1, pageCount).map((page) => (
-            <SelectItem
-              className={currentPage === page ? "active" : null}
-              onClick={() => setCurrentPage(page)}
-            >
-              {page}
-            </SelectItem>
-          ))}
-          <ArrowForwardIosIcon
-            onClick={() => next(currentPage, setCurrentPage, PagesCount)}
-          />
-        </SelectContainer>
-      );
-    case currentPage <= 4 && pageCount > 7:
-      return (
-        <SelectContainer>
-          <ArrowBackIosIcon onClick={() => prev(currentPage, setCurrentPage)} />
-          {range(1, 5).map((page) => (
-            <SelectItem
-              className={currentPage === page ? "active" : null}
-              key={page}
-              onClick={() => setCurrentPage(page)}
-            >
-              {page}
-            </SelectItem>
-          ))}
-          <SelectItem>...</SelectItem>
-          <SelectItem onClick={() => setCurrentPage(pageCount)}>
-            {pageCount}
-          </SelectItem>
-          <ArrowForwardIosIcon
-            onClick={() => next(currentPage, setCurrentPage, PagesCount)}
-          />
-        </SelectContainer>
-      );
-    case currentPage >= 5 && currentPage <= pageCount - 4 && pageCount > 7:
-      return (
-        <SelectContainer>
-          <ArrowBackIosIcon onClick={() => prev(currentPage, setCurrentPage)} />
-          <SelectItem id={1} onClick={() => setCurrentPage(1)}>
-            1
-          </SelectItem>
-          <SelectItem>...</SelectItem>
-          {range(currentPage - 1, currentPage + 1).map((page) => (
-            <SelectItem
-              className={currentPage === page ? "active" : null}
-              key={page}
-              onClick={() => setCurrentPage(page)}
-            >
-              {page}
-            </SelectItem>
-          ))}
-          <SelectItem>...</SelectItem>
-          <SelectItem onClick={() => setCurrentPage(pageCount)}>
-            {pageCount}
-          </SelectItem>
-          <ArrowForwardIosIcon
-            onClick={() => next(currentPage, setCurrentPage, PagesCount)}
-          />
-        </SelectContainer>
-      );
-    case currentPage >= pageCount - 3 && pageCount > 7:
-      return (
-        <SelectContainer>
-          <ArrowBackIosIcon onClick={() => prev(currentPage, setCurrentPage)} />
-          <SelectItem id={1} onClick={() => setCurrentPage(1)}>
-            1
-          </SelectItem>
-          <SelectItem>...</SelectItem>
-          {range(pageCount - 4, pageCount).map((page) => (
-            <SelectItem
-              className={currentPage === page ? "active" : null}
-              key={page}
-              onClick={() => setCurrentPage(page)}
-            >
-              {page}
-            </SelectItem>
-          ))}
-          <ArrowForwardIosIcon
-            onClick={() => next(currentPage, setCurrentPage, PagesCount)}
-          />
-        </SelectContainer>
-      );
+    case pageCount < 8: //no dots are displayed, pageCount is less or equal to item limit in selectBar.
+      flags = {
+        ...flags,
+        beginning: 2,
+        end: pageCount,
+      };
+      break;
+    case currentPage <= 4 && pageCount > 7: //only right dots are displayed
+      flags = {
+        ...flags,
+        rightDots: true,
+        beginning: 2,
+        end: 5,
+      };
+      break;
+    case currentPage >= 5 && currentPage <= pageCount - 4 && pageCount > 7: //left and right dots are displayed
+      flags = {
+        leftDots: true,
+        rightDots: true,
+        beginning: currentPage - 1,
+        end: currentPage + 1,
+      };
+      break;
+    case currentPage >= pageCount - 3 && pageCount > 7: //only left dots are displayed
+      flags = {
+        ...flags,
+        leftDots: true,
+        beginning: pageCount - 4,
+        end: pageCount - 1,
+      };
+      break;
     default:
       return <SelectContainer />;
   }
+  let createPageNumbers = range(flags.beginning, flags.end).map(
+    (page, index) => (
+      <SelectItem
+        key={index}
+        className={currentPage === page ? "active" : null}
+        onClick={() => setCurrentPage(page)}
+      >
+        {page}
+      </SelectItem>
+    )
+  );
+  return (
+    <SelectContainer>
+      <ArrowBackIosIcon onClick={() => prev(currentPage, setCurrentPage)} />
+      <SelectItem
+        className={currentPage === 1 ? "active" : null}
+        onClick={() => setCurrentPage(1)}
+      >
+        1
+      </SelectItem>
+      {flags.leftDots && <SelectItem>...</SelectItem>}
+      {createPageNumbers}
+      {flags.rightDots && <SelectItem>...</SelectItem>}
+      {pageCount > 7 && (
+        <SelectItem
+          className={currentPage === pageCount ? "active" : null}
+          onClick={() => setCurrentPage(pageCount)}
+        >
+          {pageCount}
+        </SelectItem>
+      )}
+      <ArrowForwardIosIcon
+        onClick={() => next(currentPage, setCurrentPage, pageCount)}
+      />
+    </SelectContainer>
+  );
 };
 
-function PageSelect() {
-  const [currentPage, setCurrentPage] = useState(1);
+function PageSelect({
+  currentPage,
+  currentPageSetter,
+  pagesCount,
+  itemCount,
+  itemsPerPageSetter,
+}) {
+  const [dropdownToggle, setDropdownToggle] = useState(false);
   return (
     <div>
       <SelectContainer>
-        {createPageList(currentPage, setCurrentPage, PagesCount)}
-        <PageCountList>
-          <PageCountLabel>Per page</PageCountLabel>
-          <PageCountButton>{PagesCount}</PageCountButton>
-          <ArrowDropDownIcon />
-        </PageCountList>
+        {createPageList(currentPage, currentPageSetter, pagesCount)}
+        <ItemCountWrapper>
+          <ItemCountButton onClick={() => setDropdownToggle(!dropdownToggle)}>
+            <ItemCountLabel>Per page</ItemCountLabel>
+            <ItemCountNumber>{itemCount}</ItemCountNumber>
+            <ArrowDropDownIcon />
+          </ItemCountButton>
+          <ItemCountList className={dropdownToggle ? "active" : "hidden"}>
+            <ItemCountListItem
+              onClick={() =>
+                changeItemCount(10, itemsPerPageSetter, setDropdownToggle)
+              }
+            >
+              10
+            </ItemCountListItem>
+            <ItemCountListItem
+              onClick={() =>
+                changeItemCount(20, itemsPerPageSetter, setDropdownToggle)
+              }
+            >
+              20
+            </ItemCountListItem>
+            <ItemCountListItem
+              onClick={() =>
+                changeItemCount(50, itemsPerPageSetter, setDropdownToggle)
+              }
+            >
+              50
+            </ItemCountListItem>
+          </ItemCountList>
+        </ItemCountWrapper>
       </SelectContainer>
     </div>
   );

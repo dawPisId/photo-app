@@ -7,7 +7,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Layout = styled.div`
-  padding: 2.5rem 15% 0rem 15%;
+  padding: 2.5rem 15% 10rem 15%;
   font-size: 2rem;
 `;
 
