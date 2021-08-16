@@ -4,7 +4,7 @@ import React from "react";
 
 const Loader = () => (
   <Wrapper>
-    <Icon/>
+    <Icon />
     <Label>Loading</Label>
   </Wrapper>
 );

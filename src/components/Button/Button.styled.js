@@ -10,6 +10,9 @@ export const Wrapper = styled.button`
   border: none;
   border-radius: 2px;
   box-shadow: 0px 4px 3px #aaaaaa;
+  @media (max-width: 620px) {
+    margin: 1.5rem 0rem 1rem 0rem;
+  }
 
   &:active {
     background-color: #d9d9d9;

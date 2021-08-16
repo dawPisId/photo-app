@@ -7,7 +7,12 @@ const InputField = ({ label, inputSetter }) => (
   <InputWrapper>
     <SearchIcon />
     <InputLabel>{label}</InputLabel>
-    <InputBox type="text" onChange={(event) => {inputSetter(event.target.value)}} />
+    <InputBox
+      type="text"
+      onChange={(event) => {
+        inputSetter(event.target.value);
+      }}
+    />
   </InputWrapper>
 );
 

@@ -19,3 +19,5 @@ export const changeItemCount = (itemCount, setItemCount, setDropdownToggle) => {
   setItemCount(itemCount);
   setDropdownToggle(false);
 };
+
+export const counts = [10, 20, 50];

@@ -11,6 +11,9 @@ export const SelectContainer = styled.div`
       cursor: pointer;
     }
   }
+  @media (max-width: 720px) {
+    flex-direction: column;
+  }
 `;
 
 export const SelectItem = styled.div`
