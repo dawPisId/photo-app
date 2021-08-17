@@ -7,8 +7,9 @@ import Loader from "../../components/Loader/Loader";
 import PageSelect from "../../components/PageSelect/PageSelect";
 import TopSearchBar from "../../components/TopSearchBar/TopSearchBar";
 import { URL } from "../../APIAddress";
+import { zoom } from "../../components/PageSelect/helpers";
 
-function Photos() {
+function Photos({ match }) {
   const [query, setQuery] = useState("");
   const [photos, setPhotos] = useState([]);
   const [page, setPage] = useState(1);
@@ -18,17 +19,17 @@ function Photos() {
   const [isZoomed, setIsZoomed] = useState(false);
   const [zoomUrl, setZoomUrl] = useState("");
   const [zoomLabel, setZoomLabel] = useState("");
-
-  const zoom = (setZoom, setUrl, imgUrl, setLabel, label) => {
-    setUrl(imgUrl);
-    setLabel(label);
-    setZoom(true);
-  };
+  const [albumVariant, setAlbumVariant] = useState("photos");
 
   useEffect(() => {
+    if (typeof match.params.number === 'string') {
+      setAlbumVariant(`albums/${match.params.number}/photos`);
+    } else {
+      setAlbumVariant("photos");
+    }
     let firstPhotoIndex = (page - 1) * itemsPerPage;
     setIsLoading(true);
-    fetch(`${URL}/photos?q=${query}`)
+    fetch(`${URL}/${albumVariant}?q=${query}`)
       .then((response) => response.json())
       .then((responseData) => {
         setPageCount(Math.ceil(responseData.length / itemsPerPage));
@@ -39,8 +40,10 @@ function Photos() {
       .catch((error) => {
         console.log("error", error);
       })
-      .finally(() => setIsLoading(false));
-  }, [itemsPerPage, page, query]);
+      .finally(() => {
+        setIsLoading(false);
+      });
+  }, [itemsPerPage, match.params.number, albumVariant, page, query]);
 
   return (
     <div>
@@ -74,7 +77,7 @@ function Photos() {
         pagesCount={pageCount}
         itemCount={itemsPerPage}
         itemsPerPageSetter={setItemsPerPage}
-      ></PageSelect>
+      />
     </div>
   );
 }
