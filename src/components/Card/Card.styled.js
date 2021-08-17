@@ -6,6 +6,7 @@ export const Layout = styled.div`
   align-items: center;
   background-color: white;
   border-radius: 5px;
+  cursor: pointer;
   box-shadow: 0px 5px 5px grey;
   height: 20rem;
   overflow: hidden;
@@ -19,8 +20,12 @@ export const Layout = styled.div`
 
 export const Label = styled.span`
   height: 10%;
-  margin: 1rem;
+  margin: 1rem 1rem 0.5rem 1rem;
   overflow: scroll;
+  -ms-overflow-style: none;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
 `;

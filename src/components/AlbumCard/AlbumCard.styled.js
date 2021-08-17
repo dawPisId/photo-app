@@ -4,6 +4,7 @@ export const Layout = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0px 5px 5px grey;
