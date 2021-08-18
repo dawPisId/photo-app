@@ -1,9 +1,9 @@
-import { InputBox, InputLabel, InputWrapper } from "./InputField.styled";
+import { InputBox, InputLabel, InputWrapper } from "./Search.styled";
 
 import React from "react";
 import SearchIcon from "@material-ui/icons/Search";
 
-const InputField = ({ label, inputSetter }) => (
+const Search = ({ label, inputSetter }) => (
   <InputWrapper>
     <SearchIcon />
     <InputLabel>{label}</InputLabel>
@@ -16,4 +16,4 @@ const InputField = ({ label, inputSetter }) => (
   </InputWrapper>
 );
 
-export default InputField;
+export default Search;
