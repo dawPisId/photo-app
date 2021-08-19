@@ -5,15 +5,11 @@ import React from "react";
 
 const ImageZoom = ({ setZoomTrigger, imgUrl, imgLabel }) => (
   <Background>
-    <CloseButton
-      onClick={(e) => {
-        setZoomTrigger(false);
-      }}
-    >
+    <CloseButton onClick={(e) => setZoomTrigger(false)}>
       <CloseIcon />
     </CloseButton>
     <Image>
-      <img src={imgUrl} alt = ""/>
+      <img src={imgUrl} alt="" />
     </Image>
     <Label>{imgLabel}</Label>
   </Background>

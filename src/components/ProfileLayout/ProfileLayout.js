@@ -4,32 +4,32 @@ import {
   Label,
   Section,
   SectionHeader,
-  SectionLayout
+  SectionLayout,
 } from "./ProfileLayout.styled";
 
 import InputField from "../InputField/InputField";
 import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
 import React from "react";
 
-function ProfileLayout({ personalInfo, addressInfo, companyInfo }) {
-  let personal = [
-    { name: "Name", value: personalInfo.name },
-    { name: "Phone", value: personalInfo.phone },
-    { name: "Username", value: personalInfo.username },
-    { name: "Website", value: personalInfo.website },
-    { name: "E-mail", value: personalInfo.email },
+function ProfileLayout({ user }) {
+  const personal = [
+    { name: "Name", value: user.name },
+    { name: "Phone", value: user.phone },
+    { name: "Username", value: user.username },
+    { name: "Website", value: user.website },
+    { name: "E-mail", value: user.email },
   ];
-  let address = [
-    { name: "Street", value: addressInfo.street },
-    { name: "City", value: addressInfo.city },
-    { name: "Sufix", value: addressInfo.suite },
-    { name: "Zipcode", value: addressInfo.zipcode },
+  const address = [
+    { name: "Street", value: user.address.street },
+    { name: "City", value: user.address.city },
+    { name: "Sufix", value: user.address.suite },
+    { name: "Zipcode", value: user.address.zipcode },
   ];
 
-  let company = [
-    { name: "Name", value: companyInfo.name },
-    { name: "Catchphrase", value: companyInfo.catchPhrase },
-    { name: "Bs", value: companyInfo.bs },
+  const company = [
+    { name: "Name", value: user.company.name },
+    { name: "Catchphrase", value: user.company.catchPhrase },
+    { name: "Bs", value: user.company.bs },
   ];
   return (
     <div>

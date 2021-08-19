@@ -1,4 +1,4 @@
-import { Colors } from "../../Colors";
+import { colors } from "../../colors";
 import styled from "styled-components";
 
 export const SelectContainer = styled.div`
@@ -42,7 +42,7 @@ export const ItemCountButton = styled.div`
   margin-left: 2rem;
   cursor: pointer;
   &:active {
-    background-color: ${Colors.buttonActive};
+    background-color: ${colors.lightgrey};
   }
 `;
 
@@ -67,14 +67,14 @@ export const ItemCountListItem = styled.div`
   padding: 0.5rem 1.84rem 0.5rem 1.84rem;
   cursor: pointer;
   &:hover {
-    background-color: ${Colors.buttonActive};
+    background-color: ${colors.lightgrey};
   }
 `;
 
 export const ItemCountNumber = styled.div`
   display: inline-block;
   padding: 0.5rem 0.5rem 0.5rem 1.5rem;
-  background-color: ${Colors.transparent};
+  background-color: ${colors.transparent};
   font-size: 1rem;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
@@ -84,6 +84,7 @@ export const ItemCountNumber = styled.div`
 
 export const ItemCountLabel = styled.span`
   position: absolute;
+  background-color: ghostwhite;
   color: grey;
   top: -0.65rem;
   left: 1rem;

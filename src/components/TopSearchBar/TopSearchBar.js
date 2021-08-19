@@ -10,12 +10,7 @@ function TopSearchBar({ label, setSearchQuery }) {
     <Container>
       <Label>{label}</Label>
       <Search inputSetter={setInputQuery} label="Search by title" />
-      <Button
-        name="SEARCH"
-        action={() => {
-          setSearchQuery(inputQuery);
-        }}
-      ></Button>
+      <Button name="SEARCH" action={() => setSearchQuery(inputQuery)}></Button>
     </Container>
   );
 }

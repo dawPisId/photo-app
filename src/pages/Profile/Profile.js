@@ -4,14 +4,16 @@ import React, { useEffect, useState } from "react";
 import Loader from "../../components/Loader/Loader";
 import ProfileLayout from "../../components/ProfileLayout/ProfileLayout";
 import { URL } from "../../APIAddress";
+import { useParams } from "react-router";
 
 function Profile({ match }) {
   const [user, setUser] = useState({});
   const [isLoading, setIsLoading] = useState(true);
+  const { id } = useParams();
 
   useEffect(() => {
     setIsLoading(true);
-    fetch(`${URL}/users/${match.params.id}/`)
+    fetch(`${URL}/users/${id}/`)
       .then((response) => response.json())
       .then((responseData) => {
         setUser(responseData);
@@ -22,7 +24,7 @@ function Profile({ match }) {
       .finally(() => {
         setIsLoading(false);
       });
-  }, [match.params.id]);
+  }, [id]);
 
   return (
     <div>
@@ -32,11 +34,7 @@ function Profile({ match }) {
         <div>
           <Header>Your Profile</Header>
           <Container>
-            <ProfileLayout
-              personalInfo={user}
-              addressInfo={user.address}
-              companyInfo={user.company}
-            />
+            <ProfileLayout user={user} />
           </Container>
         </div>
       )}

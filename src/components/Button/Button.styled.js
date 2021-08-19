@@ -1,4 +1,4 @@
-import { Colors } from "../../Colors";
+import { colors } from "../../colors";
 import styled from "styled-components";
 
 export const Wrapper = styled.button`
@@ -7,15 +7,15 @@ export const Wrapper = styled.button`
   font-size: 1.25rem;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
-  background-color: ${Colors.button};
+  background-color: ${colors.white};
   border: none;
   border-radius: 2px;
-  box-shadow: 0px 4px 3px ${Colors.buttonShadow};
+  box-shadow: 0px 4px 3px ${colors.grey};
   @media (max-width: 620px) {
     margin: 1.5rem 0rem 1rem 0rem;
   }
 
   &:active {
-    background-color: ${Colors.buttonActive};
+    background-color: ${colors.lightgrey};
   }
 `;

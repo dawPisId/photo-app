@@ -6,24 +6,24 @@ export const Header = styled.div`
 
 export const Container = styled.div`
   padding: 0rem 2rem;
-  margin:0;
+  margin: 0;
   display: flex;
   height: 4rem;
-  background-color:white;
-  box-shadow 0px 0px 10px grey;
+  background-color: white;
+  box-shadow: 0px 0px 10px grey;
   font-family: "Roboto" sans-serif;
   justify-content: flex-end;
-  align-items:center;
+  align-items: center;
   list-style-type: none;
   a {
     text-decoration: none;
     color: black;
   }
-  @media (max-width: 576px){
-    height:auto;
-    flex-direction:column;
-    a{
-      padding:1rem;
+  @media (max-width: 576px) {
+    height: auto;
+    flex-direction: column;
+    a {
+      padding: 1rem;
     }
   }
 `;

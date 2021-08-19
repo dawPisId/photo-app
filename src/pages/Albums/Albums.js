@@ -12,7 +12,7 @@ function Albums() {
   const [albums, setAlbums] = useState([]);
   const [page, setPage] = useState(1);
   const [pageCount, setPageCount] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(10);
+  const [itemsPerPage, setItemsPerPage] = useState(12);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

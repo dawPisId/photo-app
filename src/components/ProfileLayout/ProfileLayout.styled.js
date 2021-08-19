@@ -29,7 +29,7 @@ export const SectionHeader = styled.div`
 
 export const SectionLayout = styled.div`
   display: grid;
-  padding: 3rem 2rem 3rem 2rem;
+  padding: 3rem 0.5rem 3rem 0.5rem;
   grid-template-columns: 1.05fr 0.95fr;
   grid-gap: 1rem;
   grid-column-gap: 4rem;
@@ -41,6 +41,6 @@ export const SectionLayout = styled.div`
 export const CompanyLayout = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 3rem 2rem 3rem 2rem;
+  padding: 3rem 0.5rem 3rem 0.5rem;
   gap:1rem;
 `;
