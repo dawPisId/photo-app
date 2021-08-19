@@ -5,7 +5,12 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import React from "react";
 
-function PageSelectItems({ currentPage, setCurrentPage, pageCount }) {
+interface InputProps {
+  currentPage: number;
+  pageCount: number;
+  setCurrentPage: (value:number) => void;
+}
+function PageSelectItems({ currentPage, setCurrentPage, pageCount }:InputProps) {
   let flags = {
     leftDots: false,
     rightDots: false,
@@ -51,7 +56,7 @@ function PageSelectItems({ currentPage, setCurrentPage, pageCount }) {
     (page, index) => (
       <SelectItem
         key={index}
-        className={currentPage === page ? "active" : null}
+        className={currentPage === page ? "active" : undefined}
         onClick={() => setCurrentPage(page)}
       >
         {page}
@@ -62,7 +67,7 @@ function PageSelectItems({ currentPage, setCurrentPage, pageCount }) {
     <Container>
       <ArrowBackIosIcon onClick={() => prev(currentPage, setCurrentPage)} />
       <SelectItem
-        className={currentPage === 1 ? "active" : null}
+        className={currentPage === 1 ? "active" : undefined}
         onClick={() => setCurrentPage(1)}
       >
         1
@@ -72,7 +77,7 @@ function PageSelectItems({ currentPage, setCurrentPage, pageCount }) {
       {flags.rightDots && <SelectItem>...</SelectItem>}
       {pageCount > 7 && (
         <SelectItem
-          className={currentPage === pageCount ? "active" : null}
+          className={currentPage === pageCount ? "active" : undefined}
           onClick={() => setCurrentPage(pageCount)}
         >
           {pageCount}

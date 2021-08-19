@@ -1,7 +1,7 @@
-import { Container, Header, Logo } from "./NavBar.styled.js";
+import { Container, Header, Logo } from "./NavBar.styled";
 
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
-import NavItem from "../NavItem/NavItem.js";
+import NavItem from "../NavItem/NavItem";
 import PhotoAlbumIcon from "@material-ui/icons/PhotoAlbum";
 import PhotoIcon from "@material-ui/icons/Photo";
 import React from "react";

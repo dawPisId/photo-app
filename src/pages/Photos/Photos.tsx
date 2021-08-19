@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { RouteComponentProps, useParams } from "react-router-dom";
 
 import Card from "../../components/Card/Card";
 import Grid from "../../components/Grid/Grid";
@@ -7,10 +8,17 @@ import Loader from "../../components/Loader/Loader";
 import PageSelect from "../../components/PageSelect/PageSelect";
 import TopSearchBar from "../../components/TopSearchBar/TopSearchBar";
 import { URL } from "../../APIAddress";
-import { useParams } from "react-router-dom";
 import { zoom } from "../../components/PageSelect/helpers";
 
-function Photos({ match }) {
+interface idInterface{
+  id:string;
+}
+
+interface InputProps{
+  match:string
+}
+
+function Photos({ match}:RouteComponentProps<InputProps>) {
   const [query, setQuery] = useState("");
   const [photos, setPhotos] = useState([]);
   const [page, setPage] = useState(1);
@@ -20,12 +28,13 @@ function Photos({ match }) {
   const [isZoomed, setIsZoomed] = useState(false);
   const [zoomUrl, setZoomUrl] = useState("");
   const [zoomLabel, setZoomLabel] = useState("");
-  const { id } = useParams();
+  const { id }:idInterface = useParams();
+
 
   useEffect(() => {
     const valueCheck = typeof id === "string";
-    let path = valueCheck ? `albums/${id}/photos` : "photos";
-    let firstPhotoIndex = (page - 1) * itemsPerPage;
+    const path = valueCheck ? `albums/${id}/photos` : "photos";
+    const firstPhotoIndex = (page - 1) * itemsPerPage;
     setIsLoading(true);
     fetch(`${URL}/${path}?q=${query}`)
       .then((response) => response.json())
@@ -41,7 +50,7 @@ function Photos({ match }) {
       .finally(() => {
         setIsLoading(false);
       });
-  }, [itemsPerPage, match.params.id, page, query]);
+  }, [itemsPerPage, id, page, query]);
 
   return (
     <div>

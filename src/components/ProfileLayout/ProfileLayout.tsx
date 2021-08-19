@@ -11,7 +11,28 @@ import InputField from "../InputField/InputField";
 import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
 import React from "react";
 
-function ProfileLayout({ user }) {
+interface InputProps {
+  user: {
+    name: string;
+    phone: string;
+    username: string;
+    website: string;
+    email: string;
+    address: {
+      street: string;
+      city: string;
+      suite: string;
+      zipcode: string;
+    };
+    company: {
+      name: string;
+      catchPhrase: string;
+      bs: string;
+    };
+  };
+}
+
+function ProfileLayout({ user }: InputProps) {
   const personal = [
     { name: "Name", value: user.name },
     { name: "Phone", value: user.phone },

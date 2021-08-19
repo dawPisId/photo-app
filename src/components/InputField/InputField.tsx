@@ -2,7 +2,12 @@ import { InputBox, InputLabel, InputWrapper } from "./InputField.styled";
 
 import React from "react";
 
-const InputField = ({ label, fillValue }) => (
+interface InputProps {
+  label: string,
+  fillValue: string
+}
+
+const InputField = ({ label, fillValue }:InputProps) => (
   <InputWrapper>
     <InputLabel>{label}</InputLabel>
     <InputBox type="text" value={fillValue} readOnly={true} />

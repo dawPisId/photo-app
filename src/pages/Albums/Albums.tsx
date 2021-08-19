@@ -7,6 +7,13 @@ import PageSelect from "../../components/PageSelect/PageSelect";
 import TopSearchBar from "../../components/TopSearchBar/TopSearchBar";
 import { URL } from "../../APIAddress";
 
+interface StateProps {
+  albumId:number,
+  id:number,
+  title:string,
+  url:string,
+  thumbnailUrl:string
+}
 function Albums() {
   const [query, setQuery] = useState("");
   const [albums, setAlbums] = useState([]);

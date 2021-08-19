@@ -1,3 +1,5 @@
+///<reference path="AlbumCard.d.ts"/>
+
 import { Button, ImageRow, Label, Layout } from "./AlbumCard.styled";
 import React, { useEffect, useState } from "react";
 
@@ -5,10 +7,10 @@ import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { NavLink } from "react-router-dom";
 import { URL } from "../../APIAddress";
 
-function AlbumCard({ name, number }) {
-  const [photos, setPhotos] = useState([]);
+const AlbumCard:React.FC<InputProps> = ({ name, albumNumber }) => {
+  const [photos, setPhotos] = useState<StateProps[]>([]);
   useEffect(() => {
-    fetch(`${URL}/albums/${number}/photos?_start=0&_end=3`)
+    fetch(`${URL}/albums/${albumNumber}/photos?_start=0&_end=3`)
       .then((response) => response.json())
       .then((responseData) => {
         setPhotos(responseData);
@@ -16,7 +18,7 @@ function AlbumCard({ name, number }) {
       .catch((error) => {
         console.log("error", error);
       });
-  }, [number]);
+  }, [albumNumber]);
   return (
     <Layout>
       <Label>{name}</Label>
@@ -25,7 +27,7 @@ function AlbumCard({ name, number }) {
           <img src={link.url} key={index} alt="" />
         ))}
       </ImageRow>
-      <NavLink to={`/albums/${number}/photos/`}>
+      <NavLink to={`/albums/${albumNumber}/photos/`}>
         <Button>
           SEE MORE
           <ArrowForwardIosIcon />

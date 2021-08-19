@@ -4,7 +4,12 @@ import React, { useState } from "react";
 import Button from "../../components/Button/Button";
 import Search from "../../components/Search/Search";
 
-function TopSearchBar({ label, setSearchQuery }) {
+interface InputProps {
+  label: string;
+  setSearchQuery: (value: string) => void;
+}
+
+function TopSearchBar({ label, setSearchQuery }: InputProps) {
   const [inputQuery, setInputQuery] = useState("");
   return (
     <Container>

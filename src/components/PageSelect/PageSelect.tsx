@@ -13,13 +13,21 @@ import { changeItemCount, counts } from "./helpers";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import PageSelectItems from "../PageSelectItems/PageSelectItems";
 
+interface InputProps {
+  currentPage: number;
+  currentPageSetter: (value: number) => void;
+  pagesCount: number;
+  itemCount: number;
+  itemsPerPageSetter: (value: number) => void;
+}
+
 function PageSelect({
   currentPage,
   currentPageSetter,
   pagesCount,
   itemCount,
   itemsPerPageSetter,
-}) {
+}: InputProps) {
   const [dropdownToggle, setDropdownToggle] = useState(false);
   return (
     <div>
