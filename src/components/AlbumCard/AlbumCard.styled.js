@@ -14,13 +14,16 @@ export const Layout = styled.div`
     text-decoration: none;
     color: black;
     align-self: flex-end;
+    margin-top: auto;
   }
 `;
 
 export const Label = styled.span`
   margin-top: 1rem;
+  padding: 0rem 2rem 0rem 2rem;
   overflow: scroll;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  height: 20%;
   font-family: "Roboto", sans-serif;
   &::-webkit-scrollbar {
     display: none;
@@ -31,6 +34,7 @@ export const ImageRow = styled.div`
   display: grid;
   grid-column-gap: 0.5rem;
   margin: 2rem 0rem 2rem 0rem;
+  background-color: white;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   img {

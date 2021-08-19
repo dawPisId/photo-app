@@ -1,8 +1,9 @@
+import { Colors } from "../../Colors";
 import styled from "styled-components";
 
 export const InputWrapper = styled.div`
   display: inline-flex;
-  background-color: rgba(255, 0, 0, 0);
+  background-color: ${Colors.transparent};
   position: relative;
   align-items: center;
   margin: 0rem 0.5rem;
@@ -17,7 +18,7 @@ export const InputWrapper = styled.div`
 `;
 export const InputBox = styled.input`
   font-family: "Roboto", sans-serif;
-  background-color: rgba(255, 0, 0, 0);
+  background-color: ${Colors.transparent};
   font-size: 1.25rem;
   margin: 0.4rem 0rem;
   width: 10rem;

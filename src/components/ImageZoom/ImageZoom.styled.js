@@ -1,3 +1,4 @@
+import { Colors } from "../../Colors";
 import styled from "styled-components";
 
 export const CloseButton = styled.div`
@@ -23,7 +24,7 @@ export const Background = styled.div`
   width: 100vw;
   left: 0px;
   top: 0px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: ${Colors.zoomBackground};
   z-index: 2;
 `;
 

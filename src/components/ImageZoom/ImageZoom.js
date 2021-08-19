@@ -13,7 +13,7 @@ const ImageZoom = ({ setZoomTrigger, imgUrl, imgLabel }) => (
       <CloseIcon />
     </CloseButton>
     <Image>
-      <img src={imgUrl} />
+      <img src={imgUrl} alt = ""/>
     </Image>
     <Label>{imgLabel}</Label>
   </Background>
