@@ -5,12 +5,7 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import React from "react";
 
-interface InputProps {
-  currentPage: number;
-  pageCount: number;
-  setCurrentPage: (value:number) => void;
-}
-function PageSelectItems({ currentPage, setCurrentPage, pageCount }:InputProps) {
+function PageSelectItems({ currentPage, setCurrentPage, pageCount }:PageItemProps) {
   let flags = {
     leftDots: false,
     rightDots: false,

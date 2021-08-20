@@ -10,15 +10,7 @@ import TopSearchBar from "../../components/TopSearchBar/TopSearchBar";
 import { URL } from "../../APIAddress";
 import { zoom } from "../../components/PageSelect/helpers";
 
-interface idInterface{
-  id:string;
-}
-
-interface InputProps{
-  match:string
-}
-
-function Photos({ match}:RouteComponentProps<InputProps>) {
+function Photos({ match }:PhotosProps) {
   const [query, setQuery] = useState("");
   const [photos, setPhotos] = useState([]);
   const [page, setPage] = useState(1);

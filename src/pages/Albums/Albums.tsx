@@ -7,16 +7,9 @@ import PageSelect from "../../components/PageSelect/PageSelect";
 import TopSearchBar from "../../components/TopSearchBar/TopSearchBar";
 import { URL } from "../../APIAddress";
 
-interface StateProps {
-  albumId:number,
-  id:number,
-  title:string,
-  url:string,
-  thumbnailUrl:string
-}
 function Albums() {
   const [query, setQuery] = useState("");
-  const [albums, setAlbums] = useState([]);
+  const [albums, setAlbums] = useState<AlbumsProps[]>([]);
   const [page, setPage] = useState(1);
   const [pageCount, setPageCount] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(12);
@@ -47,7 +40,7 @@ function Albums() {
         <div>
           <AlbumGrid>
             {albums.map(({ id, title }) => (
-              <AlbumCard name={title} number={id} key={id} />
+              <AlbumCard name={title} albumNumber={id} key={id} />
             ))}
           </AlbumGrid>
           <PageSelect

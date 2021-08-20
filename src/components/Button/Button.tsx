@@ -6,11 +6,6 @@ const performFunction = (e:React.MouseEvent<HTMLElement,MouseEvent>,action:()=>v
   action();
 }
 
-interface IProps {
-  name: string,
-  action: () => void
-}
-
 const Button = ({ name, action }:IProps) => (
   <Wrapper onClick={(e) => {performFunction(e,action)}}>{name}</Wrapper>
 );
