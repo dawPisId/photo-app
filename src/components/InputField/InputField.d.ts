@@ -1,4 +1,4 @@
 interface InputFieldProps {
-    label: string,
-    fillValue: string
-  }
+  label: string;
+  fillValue: string;
+}

@@ -1,6 +1,8 @@
+///<reference path="AlbumGrid.d.ts"/>
+
 import { Layout } from "./AlbumGrid.styled";
 import React from "react";
 
-const Grid = ({ children }:AlbumGridProps) => (<Layout>{children}</Layout>);
+const AlbumGrid: React.FC<any> = ({ children }) => <Layout>{children}</Layout>;
 
-export default Grid
+export default AlbumGrid;

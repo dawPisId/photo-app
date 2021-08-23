@@ -1,61 +1,36 @@
+///<reference path="Profile.d.ts"/>
+
 import { Container, Header } from "./Profile.styled";
 import React, { useEffect, useState } from "react";
-import { RouteComponentProps, useParams } from "react-router";
 
 import Loader from "../../components/Loader/Loader";
 import ProfileLayout from "../../components/ProfileLayout/ProfileLayout";
 import { URL } from "../../APIAddress";
-
-interface idInterface{
-  id:string;
-}
-
-interface InputProps{
-  match:string
-}
-
-interface UserInterface{
-    name: string;
-    phone: string;
-    username: string;
-    website: string;
-    email: string;
-    address: {
-      street: string;
-      city: string;
-      suite: string;
-      zipcode: string;
-    };
-    company: {
-      name: string;
-      catchPhrase: string;
-      bs: string;
-    };
-}
+import { useParams } from "react-router";
 
 const initUser = {
+  name: "",
+  phone: "",
+  username: "",
+  website: "",
+  email: "",
+  address: {
+    street: "",
+    city: "",
+    suite: "",
+    zipcode: "",
+  },
+  company: {
     name: "",
-    phone: "",
-    username: "",
-    website: "",
-    email: "",
-    address: {
-      street: "",
-      city: "",
-      suite: "",
-      zipcode: "",
-    },
-    company: {
-      name: "",
-      catchPhrase: "",
-      bs: "",
-    }
-  }
+    catchPhrase: "",
+    bs: "",
+  },
+};
 
-function Profile({ match }:RouteComponentProps<InputProps>) {
+function Profile() {
   const [user, setUser] = useState(initUser);
   const [isLoading, setIsLoading] = useState(true);
-  const { id }:idInterface = useParams();
+  const { id }: idInterface = useParams();
 
   useEffect(() => {
     setIsLoading(true);

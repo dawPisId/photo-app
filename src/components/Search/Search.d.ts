@@ -1,4 +1,4 @@
 interface SearchProps {
-    label: string;
-    inputSetter: (value: string) => void;
-  }
+  label: string;
+  inputSetter: (value: string) => void;
+}

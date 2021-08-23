@@ -1,4 +1,4 @@
 interface TopSearchBarProps {
-    label: string;
-    setSearchQuery: (value: string) => void;
-  }
+  label: string;
+  setSearchQuery: (value: string) => void;
+}

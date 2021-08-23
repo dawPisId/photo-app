@@ -6,9 +6,8 @@ import NavBar from "../../components/NavBar/NavBar";
 import Photos from "../Photos/Photos";
 import Profile from "../Profile/Profile";
 import React from "react";
-import styled from "styled-components";
 
-const App = () => (
+const App: React.FC = () => (
   <BrowserRouter>
     <NavBar></NavBar>
     <Layout>

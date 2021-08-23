@@ -1,5 +1,4 @@
-interface IProps {
-    name: string,
-    action: () => void
-  }
-
+interface ButtonProps {
+  name: string;
+  action: () => void;
+}

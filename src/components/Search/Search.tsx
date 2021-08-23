@@ -1,9 +1,11 @@
+///<reference path="Search.d.ts"/>
+
 import { InputBox, InputLabel, InputWrapper } from "./Search.styled";
 
 import React from "react";
 import SearchIcon from "@material-ui/icons/Search";
 
-const Search = ({ label, inputSetter }: SearchProps) => (
+const Search: React.FC<SearchProps> = ({ label, inputSetter }) => (
   <InputWrapper>
     <SearchIcon />
     <InputLabel>{label}</InputLabel>

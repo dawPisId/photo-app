@@ -1,3 +1,5 @@
+///<reference path="PageSelectItems.d.ts"/>
+
 import { Container, SelectItem } from "./PageSelectItems.styled";
 import { next, prev, range } from "../PageSelect/helpers";
 
@@ -5,7 +7,11 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import React from "react";
 
-function PageSelectItems({ currentPage, setCurrentPage, pageCount }:PageItemProps) {
+const PageSelectItems: React.FC<PageItemProps> = ({
+  currentPage,
+  setCurrentPage,
+  pageCount,
+}) => {
   let flags = {
     leftDots: false,
     rightDots: false,
@@ -83,6 +89,6 @@ function PageSelectItems({ currentPage, setCurrentPage, pageCount }:PageItemProp
       />
     </Container>
   );
-}
+};
 
 export default PageSelectItems;

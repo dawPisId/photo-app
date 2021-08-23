@@ -1,0 +1,3 @@
+interface idInterface {
+  id: string;
+}

@@ -7,7 +7,7 @@ import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { NavLink } from "react-router-dom";
 import { URL } from "../../APIAddress";
 
-function AlbumCard({ name, albumNumber }:InputProps){
+const AlbumCard: React.FC<AlbumCardProps> = ({ name, albumNumber }) => {
   const [photos, setPhotos] = useState<StateProps[]>([]);
   useEffect(() => {
     fetch(`${URL}/albums/${albumNumber}/photos?_start=0&_end=3`)
@@ -18,7 +18,6 @@ function AlbumCard({ name, albumNumber }:InputProps){
       .catch((error) => {
         console.log("error", error);
       });
-    console.log(`${URL}/albums/${albumNumber}/photos?_start=0&_end=3`)
   }, [albumNumber]);
   return (
     <Layout>
@@ -36,5 +35,5 @@ function AlbumCard({ name, albumNumber }:InputProps){
       </NavLink>
     </Layout>
   );
-}
+};
 export default AlbumCard;

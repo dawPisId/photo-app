@@ -1,3 +1,5 @@
+///<reference path="Albums.d.ts"/>
+
 import React, { useEffect, useState } from "react";
 
 import AlbumCard from "../../components/AlbumCard/AlbumCard";
@@ -7,7 +9,7 @@ import PageSelect from "../../components/PageSelect/PageSelect";
 import TopSearchBar from "../../components/TopSearchBar/TopSearchBar";
 import { URL } from "../../APIAddress";
 
-function Albums() {
+const Albums: React.FC = () => {
   const [query, setQuery] = useState("");
   const [albums, setAlbums] = useState<AlbumsProps[]>([]);
   const [page, setPage] = useState(1);
@@ -54,6 +56,6 @@ function Albums() {
       )}
     </div>
   );
-}
+};
 
 export default Albums;

@@ -2,7 +2,7 @@ import { Icon, Label, Wrapper } from "./Loader.styled";
 
 import React from "react";
 
-const Loader = () => (
+const Loader: React.FC = () => (
   <Wrapper>
     <Icon />
     <Label>Loading</Label>

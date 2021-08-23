@@ -1,3 +1,5 @@
+///<reference path="PageSelect.d.ts"/>
+
 import {
   ItemCountButton,
   ItemCountLabel,
@@ -13,13 +15,13 @@ import { changeItemCount, counts } from "./helpers";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import PageSelectItems from "../PageSelectItems/PageSelectItems";
 
-function PageSelect({
+const PageSelect: React.FC<PageSelectProps> = ({
   currentPage,
   currentPageSetter,
   pagesCount,
   itemCount,
   itemsPerPageSetter,
-}: PageSelectProps) {
+}) => {
   const [dropdownToggle, setDropdownToggle] = useState(false);
   return (
     <div>
@@ -51,6 +53,6 @@ function PageSelect({
       </SelectContainer>
     </div>
   );
-}
+};
 
 export default PageSelect;

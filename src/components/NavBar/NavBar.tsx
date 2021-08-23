@@ -27,7 +27,7 @@ const navData = [
   },
 ];
 
-const NavBar = () => (
+const NavBar: React.FC = () => (
   <Header>
     <Container>
       <Logo>PHOTOS APP</Logo>

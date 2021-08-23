@@ -1,6 +1,5 @@
-interface InputProps {
-    name: string,
-    url: string,
-    action: () => void
-  }
-  
+interface CardProps {
+  name: string;
+  url: string;
+  action: () => void;
+}

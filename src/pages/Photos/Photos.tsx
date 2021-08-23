@@ -1,5 +1,6 @@
+///<reference path="Photos.d.ts"/>
+
 import React, { useEffect, useState } from "react";
-import { RouteComponentProps, useParams } from "react-router-dom";
 
 import Card from "../../components/Card/Card";
 import Grid from "../../components/Grid/Grid";
@@ -8,9 +9,10 @@ import Loader from "../../components/Loader/Loader";
 import PageSelect from "../../components/PageSelect/PageSelect";
 import TopSearchBar from "../../components/TopSearchBar/TopSearchBar";
 import { URL } from "../../APIAddress";
+import { useParams } from "react-router-dom";
 import { zoom } from "../../components/PageSelect/helpers";
 
-function Photos({ match }:PhotosProps) {
+const Photos: React.FC = () => {
   const [query, setQuery] = useState("");
   const [photos, setPhotos] = useState([]);
   const [page, setPage] = useState(1);
@@ -20,8 +22,7 @@ function Photos({ match }:PhotosProps) {
   const [isZoomed, setIsZoomed] = useState(false);
   const [zoomUrl, setZoomUrl] = useState("");
   const [zoomLabel, setZoomLabel] = useState("");
-  const { id }:idInterface = useParams();
-
+  const { id }: idInterface = useParams();
 
   useEffect(() => {
     const valueCheck = typeof id === "string";
@@ -79,6 +80,6 @@ function Photos({ match }:PhotosProps) {
       />
     </div>
   );
-}
+};
 
 export default Photos;
