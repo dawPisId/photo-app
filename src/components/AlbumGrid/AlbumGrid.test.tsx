@@ -1,15 +1,16 @@
-import { BrowserRouter, Route } from "react-router-dom";
-
-import Photos from "./Photos";
+import AlbumGrid from "./AlbumGrid";
 import React from "react";
 import renderer from "react-test-renderer";
 
 it("renders correctly", () => {
   const tree = renderer
     .create(
-      <BrowserRouter>
-        <Route exact path="/" component={Photos} />
-      </BrowserRouter>
+      <AlbumGrid>
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+      </AlbumGrid>
     )
     .toJSON();
   expect(tree).toMatchSnapshot();

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-bdnxRM kxhzw"
+>
+  <span
+    className="sc-dlnjwi joyBPH"
+  >
+    one
+  </span>
+  <input
+    className="sc-gtsrHT gweHHT"
+    readOnly={true}
+    type="text"
+    value="two"
+  />
+</div>
+`;

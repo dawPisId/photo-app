@@ -1,15 +1,15 @@
-import { BrowserRouter, Route } from "react-router-dom";
-
-import Photos from "./Photos";
+import Card from "./Card";
 import React from "react";
 import renderer from "react-test-renderer";
 
 it("renders correctly", () => {
   const tree = renderer
     .create(
-      <BrowserRouter>
-        <Route exact path="/" component={Photos} />
-      </BrowserRouter>
+      <Card
+        name="one"
+        url="https://via.placeholder.com/600/92c952"
+        action={() => null}
+      />
     )
     .toJSON();
   expect(tree).toMatchSnapshot();

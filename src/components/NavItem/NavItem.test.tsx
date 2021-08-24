@@ -1,6 +1,5 @@
-import { BrowserRouter, Route } from "react-router-dom";
-
-import Photos from "./Photos";
+import { BrowserRouter } from "react-router-dom";
+import NavItem from "./NavItem";
 import React from "react";
 import renderer from "react-test-renderer";
 
@@ -8,7 +7,7 @@ it("renders correctly", () => {
   const tree = renderer
     .create(
       <BrowserRouter>
-        <Route exact path="/" component={Photos} />
+        <NavItem label = "one" link = "/" isExact = {true} icon = {<div/>}/>
       </BrowserRouter>
     )
     .toJSON();

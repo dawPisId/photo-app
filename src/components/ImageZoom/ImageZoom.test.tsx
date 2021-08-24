@@ -1,15 +1,15 @@
-import { BrowserRouter, Route } from "react-router-dom";
-
-import Photos from "./Photos";
+import ImageZoom from "./ImageZoom";
 import React from "react";
 import renderer from "react-test-renderer";
 
 it("renders correctly", () => {
   const tree = renderer
     .create(
-      <BrowserRouter>
-        <Route exact path="/" component={Photos} />
-      </BrowserRouter>
+      <ImageZoom
+        setZoomTrigger={() => null}
+        imgUrl="https://via.placeholder.com/600/92c952"
+        imgLabel="one"
+      />
     )
     .toJSON();
   expect(tree).toMatchSnapshot();

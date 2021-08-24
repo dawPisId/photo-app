@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <div
+    className="sc-kfYoZR dnEEtJ"
+  >
+    <div
+      className="sc-fKgJPI bcJkFy"
+    >
+      <li
+        className="sc-iwajpm clwkEJ"
+      >
+        PHOTOS APP
+      </li>
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <li
+          className="sc-cxNHIi bOgAHZ"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"
+            />
+          </svg>
+          PHOTOS
+        </li>
+      </a>
+      <a
+        aria-current={null}
+        href="/albums"
+        onClick={[Function]}
+      >
+        <li
+          className="sc-cxNHIi bOgAHZ"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4zm0 15l3-3.86 2.14 2.58 3-3.86L18 19H6z"
+            />
+          </svg>
+          ALBUMS
+        </li>
+      </a>
+      <a
+        aria-current={null}
+        href="/profile/1"
+        onClick={[Function]}
+      >
+        <li
+          className="sc-cxNHIi bOgAHZ"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+            />
+          </svg>
+          PROFILE
+        </li>
+      </a>
+    </div>
+  </div>,
+  <div
+    className="sc-dlMDgC fqSoTx"
+  >
+    <div>
+      <div
+        className="sc-fnVZcZ fNWuCs"
+      >
+        <span
+          className="sc-fFSPTT lkPuUq"
+        >
+          Your Photos
+        </span>
+        <div
+          className="sc-iemWCZ kFFHrw"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            />
+          </svg>
+          <span
+            className="sc-hHEiqL grLggS"
+          >
+            Search by title
+          </span>
+          <input
+            className="sc-dIvrsQ gPDNGf"
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+        <button
+          className="sc-bkbkJK iNpeNw"
+          onClick={[Function]}
+        >
+          SEARCH
+        </button>
+      </div>
+      <div
+        className="sc-iCoGMd bRAFhZ"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root sc-jSFjdj hscUxn"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"
+          />
+        </svg>
+        <div
+          className="sc-gKAaRy bRvXIE"
+        >
+          Loading
+        </div>
+      </div>
+      <div>
+        <div
+          className="sc-fujyAs bIFHPY"
+        >
+          <div
+            className="sc-ksluID cZnbnB"
+          >
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root"
+              focusable="false"
+              onClick={[Function]}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"
+              />
+            </svg>
+            <div
+              className="sc-hBMUJo bgjLTI active"
+              onClick={[Function]}
+            >
+              1
+            </div>
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root"
+              focusable="false"
+              onClick={[Function]}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
+          </div>
+          <div
+            className="sc-jrsJWt gIbdHS"
+          >
+            <div
+              className="sc-kEqXSa eOZkvP"
+              onClick={[Function]}
+            >
+              <span
+                className="sc-bqGGPW fggZIq"
+              >
+                Per page
+              </span>
+              <div
+                className="sc-dIsUp cKDehI"
+              >
+                12
+              </div>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </div>
+            <div
+              className="sc-iqAclL gATXtp hidden"
+            >
+              <div
+                className="sc-crzoAE dLmvma"
+                onClick={[Function]}
+              >
+                12
+              </div>
+              <div
+                className="sc-crzoAE dLmvma"
+                onClick={[Function]}
+              >
+                16
+              </div>
+              <div
+                className="sc-crzoAE dLmvma"
+                onClick={[Function]}
+              >
+                20
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

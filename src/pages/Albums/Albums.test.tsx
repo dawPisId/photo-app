@@ -1,8 +1,8 @@
-import App from "./App";
+import Albums from "./Albums";
 import React from "react";
 import renderer from "react-test-renderer";
 
 it("renders correctly", () => {
-  const tree = renderer.create(<App />).toJSON();
+  const tree = renderer.create(<Albums />).toJSON();
   expect(tree).toMatchSnapshot();
 });
