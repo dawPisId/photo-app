@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-bdnxRM juqWpf"
+>
+  <span
+    className="sc-gtsrHT YXTaF"
+  >
+    One
+  </span>
+  <div
+    className="sc-dlnjwi iYBmHw"
+  />
+  <a
+    aria-current={null}
+    href="/albums/1/photos/"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-hKFxyN gSMifO"
+    >
+      SEE MORE
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+        />
+      </svg>
+    </div>
+  </a>
+</div>
+`;
