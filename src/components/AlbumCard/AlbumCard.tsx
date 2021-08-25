@@ -1,5 +1,4 @@
-///<reference path="AlbumCard.d.ts"/>
-
+import { AlbumCardProps, StateProps } from "./AlbumCard.d";
 import { Button, ImageRow, Label, Layout } from "./AlbumCard.styled";
 import React, { useEffect, useState } from "react";
 
@@ -22,7 +21,7 @@ const AlbumCard: React.FC<AlbumCardProps> = ({ name, albumNumber }) => {
   return (
     <Layout>
       <Label>{name}</Label>
-      <ImageRow>
+      <ImageRow data-testid="imageRow">
         {photos.map((link, index) => (
           <img src={link.url} key={index} alt="" />
         ))}

@@ -1,4 +1,4 @@
-interface ProfileLayoutProps {
+export interface ProfileLayoutProps {
   user: {
     name: string;
     phone: string;

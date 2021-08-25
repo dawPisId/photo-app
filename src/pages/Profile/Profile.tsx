@@ -1,11 +1,10 @@
-///<reference path="Profile.d.ts"/>
-
 import { Container, Header } from "./Profile.styled";
 import React, { useEffect, useState } from "react";
 
 import Loader from "../../components/Loader/Loader";
 import ProfileLayout from "../../components/ProfileLayout/ProfileLayout";
 import { URL } from "../../APIAddress";
+import { idInterface } from "./Profile.d";
 import { useParams } from "react-router";
 
 const initUser = {

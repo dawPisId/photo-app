@@ -1,9 +1,8 @@
-///<reference path="Albums.d.ts"/>
-
 import React, { useEffect, useState } from "react";
 
 import AlbumCard from "../../components/AlbumCard/AlbumCard";
 import AlbumGrid from "../../components/AlbumGrid/AlbumGrid";
+import { AlbumsProps } from "./Albums.d";
 import Loader from "../../components/Loader/Loader";
 import PageSelect from "../../components/PageSelect/PageSelect";
 import TopSearchBar from "../../components/TopSearchBar/TopSearchBar";
@@ -39,7 +38,7 @@ const Albums: React.FC = () => {
       {isLoading ? (
         <Loader />
       ) : (
-        <div>
+        <div data-testid="testAlbum">
           <AlbumGrid>
             {albums.map(({ id, title }) => (
               <AlbumCard name={title} albumNumber={id} key={id} />

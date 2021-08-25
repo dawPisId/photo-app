@@ -1,4 +1,4 @@
-interface CardProps {
+export interface CardProps {
   name: string;
   url: string;
   action: () => void;

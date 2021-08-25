@@ -1,7 +1,3 @@
-interface idInterface {
+export interface idInterface {
   id: string;
-}
-
-interface PhotosProps {
-  match: string;
 }

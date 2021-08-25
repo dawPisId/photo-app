@@ -1,6 +1,5 @@
-///<reference path="NavItem.d.ts"/>
-
 import { Item } from "./NavItem.styled";
+import { NavItemProps } from './NavItem.d';
 import { NavLink } from "react-router-dom";
 import React from "react";
 

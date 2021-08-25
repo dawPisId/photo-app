@@ -1,153 +1,1518 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
-<div>
-  <div
-    className="sc-bkbkJK duhwYw"
-  >
-    <span
-      className="sc-iemWCZ iyOWzq"
-    >
-      Your Photos
-    </span>
-    <div
-      className="sc-hHEiqL jWQJxi"
-    >
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root"
-        focusable="false"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-        />
-      </svg>
-      <span
-        className="sc-kfYoZR fIMaiM"
-      >
-        Search by title
-      </span>
-      <input
-        className="sc-dlMDgC fEVeCl"
-        onChange={[Function]}
-        type="text"
-      />
-    </div>
-    <button
-      className="sc-dIvrsQ jxlbCO"
-      onClick={[Function]}
-    >
-      SEARCH
-    </button>
-  </div>
-  <div
-    className="sc-pNWdM dHCxGu"
-  >
-    <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root sc-iCoGMd dZSfOz"
-      focusable="false"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"
-      />
-    </svg>
-    <div
-      className="sc-fujyAs ezswet"
-    >
-      Loading
-    </div>
-  </div>
-  <div>
-    <div
-      className="sc-jrsJWt cypHCg"
-    >
-      <div
-        className="sc-fnVZcZ dRnWYw"
-      >
-        <svg
-          aria-hidden={true}
-          className="MuiSvgIcon-root"
-          focusable="false"
-          onClick={[Function]}
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"
-          />
-        </svg>
+exports[`displays the loader when loading 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
         <div
-          className="sc-fFSPTT fLhJfU active"
-          onClick={[Function]}
-        >
-          1
-        </div>
-        <svg
-          aria-hidden={true}
-          className="MuiSvgIcon-root"
-          focusable="false"
-          onClick={[Function]}
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-          />
-        </svg>
-      </div>
-      <div
-        className="sc-iqAclL jtBzoG"
-      >
-        <div
-          className="sc-crzoAE lkwUSO"
-          onClick={[Function]}
+          class="sc-bkbkJK duhwYw"
         >
           <span
-            className="sc-hBMUJo hMsLWB"
+            class="sc-iemWCZ iyOWzq"
           >
-            Per page
+            Your Photos
           </span>
           <div
-            className="sc-ksluID gdOUob"
+            class="sc-hHEiqL jWQJxi"
           >
-            12
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              />
+            </svg>
+            <span
+              class="sc-kfYoZR fIMaiM"
+            >
+              Search by title
+            </span>
+            <input
+              class="sc-dlMDgC fEVeCl"
+              type="text"
+            />
           </div>
+          <button
+            class="sc-dIvrsQ jxlbCO"
+          >
+            SEARCH
+          </button>
+        </div>
+        <div
+          class="sc-pNWdM dHCxGu"
+        >
           <svg
-            aria-hidden={true}
-            className="MuiSvgIcon-root"
+            aria-hidden="true"
+            class="MuiSvgIcon-root sc-iCoGMd dZSfOz"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M7 10l5 5 5-5z"
+              d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"
             />
           </svg>
+          <div
+            class="sc-fujyAs ezswet"
+          >
+            Loading
+          </div>
         </div>
-        <div
-          className="sc-dIsUp leREAs hidden"
-        >
+        <div>
           <div
-            className="sc-bqGGPW jZazZi"
-            onClick={[Function]}
+            class="sc-jrsJWt cypHCg"
           >
-            12
-          </div>
-          <div
-            className="sc-bqGGPW jZazZi"
-            onClick={[Function]}
-          >
-            16
-          </div>
-          <div
-            className="sc-bqGGPW jZazZi"
-            onClick={[Function]}
-          >
-            20
+            <div
+              class="sc-fnVZcZ dRnWYw"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"
+                />
+              </svg>
+              <div
+                class="sc-fFSPTT fLhJfU active"
+              >
+                1
+              </div>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                />
+              </svg>
+            </div>
+            <div
+              class="sc-iqAclL jtBzoG"
+            >
+              <div
+                class="sc-crzoAE lkwUSO"
+                data-testid="testButton"
+              >
+                <span
+                  class="sc-hBMUJo hMsLWB"
+                >
+                  Per page
+                </span>
+                <div
+                  class="sc-ksluID gdOUob"
+                >
+                  12
+                </div>
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 10l5 5 5-5z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="sc-dIsUp leREAs hidden"
+                data-testid="testList"
+              >
+                <div
+                  class="sc-bqGGPW jZazZi"
+                >
+                  12
+                </div>
+                <div
+                  class="sc-bqGGPW jZazZi"
+                >
+                  16
+                </div>
+                <div
+                  class="sc-bqGGPW jZazZi"
+                >
+                  20
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </body>,
+  "container": <div>
+    <div>
+      <div
+        class="sc-bkbkJK duhwYw"
+      >
+        <span
+          class="sc-iemWCZ iyOWzq"
+        >
+          Your Photos
+        </span>
+        <div
+          class="sc-hHEiqL jWQJxi"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            />
+          </svg>
+          <span
+            class="sc-kfYoZR fIMaiM"
+          >
+            Search by title
+          </span>
+          <input
+            class="sc-dlMDgC fEVeCl"
+            type="text"
+          />
+        </div>
+        <button
+          class="sc-dIvrsQ jxlbCO"
+        >
+          SEARCH
+        </button>
+      </div>
+      <div
+        class="sc-pNWdM dHCxGu"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root sc-iCoGMd dZSfOz"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"
+          />
+        </svg>
+        <div
+          class="sc-fujyAs ezswet"
+        >
+          Loading
+        </div>
+      </div>
+      <div>
+        <div
+          class="sc-jrsJWt cypHCg"
+        >
+          <div
+            class="sc-fnVZcZ dRnWYw"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"
+              />
+            </svg>
+            <div
+              class="sc-fFSPTT fLhJfU active"
+            >
+              1
+            </div>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
+          </div>
+          <div
+            class="sc-iqAclL jtBzoG"
+          >
+            <div
+              class="sc-crzoAE lkwUSO"
+              data-testid="testButton"
+            >
+              <span
+                class="sc-hBMUJo hMsLWB"
+              >
+                Per page
+              </span>
+              <div
+                class="sc-ksluID gdOUob"
+              >
+                12
+              </div>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </div>
+            <div
+              class="sc-dIsUp leREAs hidden"
+              data-testid="testList"
+            >
+              <div
+                class="sc-bqGGPW jZazZi"
+              >
+                12
+              </div>
+              <div
+                class="sc-bqGGPW jZazZi"
+              >
+                16
+              </div>
+              <div
+                class="sc-bqGGPW jZazZi"
+              >
+                20
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`render correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <div
+          class="sc-bkbkJK duhwYw"
+        >
+          <span
+            class="sc-iemWCZ iyOWzq"
+          >
+            Your Photos
+          </span>
+          <div
+            class="sc-hHEiqL jWQJxi"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              />
+            </svg>
+            <span
+              class="sc-kfYoZR fIMaiM"
+            >
+              Search by title
+            </span>
+            <input
+              class="sc-dlMDgC fEVeCl"
+              type="text"
+            />
+          </div>
+          <button
+            class="sc-dIvrsQ jxlbCO"
+          >
+            SEARCH
+          </button>
+        </div>
+        <div
+          data-testid="testPhoto"
+        >
+          <div
+            class="sc-dlnjwi kpVhWC"
+          >
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="accusamus beatae ad facilis cum similique qui sunt"
+                src="https://via.placeholder.com/150/92c952"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                accusamus beatae ad facilis cum similique qui sunt
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="reprehenderit est deserunt velit ipsam"
+                src="https://via.placeholder.com/150/771796"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                reprehenderit est deserunt velit ipsam
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="officia porro iure quia iusto qui ipsa ut modi"
+                src="https://via.placeholder.com/150/24f355"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                officia porro iure quia iusto qui ipsa ut modi
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="culpa odio esse rerum omnis laboriosam voluptate repudiandae"
+                src="https://via.placeholder.com/150/d32776"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                culpa odio esse rerum omnis laboriosam voluptate repudiandae
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="natus nisi omnis corporis facere molestiae rerum in"
+                src="https://via.placeholder.com/150/f66b97"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                natus nisi omnis corporis facere molestiae rerum in
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="accusamus ea aliquid et amet sequi nemo"
+                src="https://via.placeholder.com/150/56a8c2"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                accusamus ea aliquid et amet sequi nemo
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="officia delectus consequatur vero aut veniam explicabo molestias"
+                src="https://via.placeholder.com/150/b0f7cc"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                officia delectus consequatur vero aut veniam explicabo molestias
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="aut porro officiis laborum odit ea laudantium corporis"
+                src="https://via.placeholder.com/150/54176f"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                aut porro officiis laborum odit ea laudantium corporis
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="qui eius qui autem sed"
+                src="https://via.placeholder.com/150/51aa97"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                qui eius qui autem sed
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="beatae et provident et ut vel"
+                src="https://via.placeholder.com/150/810b14"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                beatae et provident et ut vel
+              </span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="sc-jrsJWt cypHCg"
+          >
+            <div
+              class="sc-fnVZcZ dRnWYw"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"
+                />
+              </svg>
+              <div
+                class="sc-fFSPTT fLhJfU active"
+              >
+                1
+              </div>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                />
+              </svg>
+            </div>
+            <div
+              class="sc-iqAclL jtBzoG"
+            >
+              <div
+                class="sc-crzoAE lkwUSO"
+                data-testid="testButton"
+              >
+                <span
+                  class="sc-hBMUJo hMsLWB"
+                >
+                  Per page
+                </span>
+                <div
+                  class="sc-ksluID gdOUob"
+                >
+                  12
+                </div>
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 10l5 5 5-5z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="sc-dIsUp leREAs hidden"
+                data-testid="testList"
+              >
+                <div
+                  class="sc-bqGGPW jZazZi"
+                >
+                  12
+                </div>
+                <div
+                  class="sc-bqGGPW jZazZi"
+                >
+                  16
+                </div>
+                <div
+                  class="sc-bqGGPW jZazZi"
+                >
+                  20
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <div
+        class="sc-bkbkJK duhwYw"
+      >
+        <span
+          class="sc-iemWCZ iyOWzq"
+        >
+          Your Photos
+        </span>
+        <div
+          class="sc-hHEiqL jWQJxi"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            />
+          </svg>
+          <span
+            class="sc-kfYoZR fIMaiM"
+          >
+            Search by title
+          </span>
+          <input
+            class="sc-dlMDgC fEVeCl"
+            type="text"
+          />
+        </div>
+        <button
+          class="sc-dIvrsQ jxlbCO"
+        >
+          SEARCH
+        </button>
+      </div>
+      <div
+        data-testid="testPhoto"
+      >
+        <div
+          class="sc-dlnjwi kpVhWC"
+        >
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="accusamus beatae ad facilis cum similique qui sunt"
+              src="https://via.placeholder.com/150/92c952"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              accusamus beatae ad facilis cum similique qui sunt
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="reprehenderit est deserunt velit ipsam"
+              src="https://via.placeholder.com/150/771796"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              reprehenderit est deserunt velit ipsam
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="officia porro iure quia iusto qui ipsa ut modi"
+              src="https://via.placeholder.com/150/24f355"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              officia porro iure quia iusto qui ipsa ut modi
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="culpa odio esse rerum omnis laboriosam voluptate repudiandae"
+              src="https://via.placeholder.com/150/d32776"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              culpa odio esse rerum omnis laboriosam voluptate repudiandae
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="natus nisi omnis corporis facere molestiae rerum in"
+              src="https://via.placeholder.com/150/f66b97"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              natus nisi omnis corporis facere molestiae rerum in
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="accusamus ea aliquid et amet sequi nemo"
+              src="https://via.placeholder.com/150/56a8c2"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              accusamus ea aliquid et amet sequi nemo
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="officia delectus consequatur vero aut veniam explicabo molestias"
+              src="https://via.placeholder.com/150/b0f7cc"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              officia delectus consequatur vero aut veniam explicabo molestias
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="aut porro officiis laborum odit ea laudantium corporis"
+              src="https://via.placeholder.com/150/54176f"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              aut porro officiis laborum odit ea laudantium corporis
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="qui eius qui autem sed"
+              src="https://via.placeholder.com/150/51aa97"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              qui eius qui autem sed
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="beatae et provident et ut vel"
+              src="https://via.placeholder.com/150/810b14"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              beatae et provident et ut vel
+            </span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class="sc-jrsJWt cypHCg"
+        >
+          <div
+            class="sc-fnVZcZ dRnWYw"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"
+              />
+            </svg>
+            <div
+              class="sc-fFSPTT fLhJfU active"
+            >
+              1
+            </div>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
+          </div>
+          <div
+            class="sc-iqAclL jtBzoG"
+          >
+            <div
+              class="sc-crzoAE lkwUSO"
+              data-testid="testButton"
+            >
+              <span
+                class="sc-hBMUJo hMsLWB"
+              >
+                Per page
+              </span>
+              <div
+                class="sc-ksluID gdOUob"
+              >
+                12
+              </div>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </div>
+            <div
+              class="sc-dIsUp leREAs hidden"
+              data-testid="testList"
+            >
+              <div
+                class="sc-bqGGPW jZazZi"
+              >
+                12
+              </div>
+              <div
+                class="sc-bqGGPW jZazZi"
+              >
+                16
+              </div>
+              <div
+                class="sc-bqGGPW jZazZi"
+              >
+                20
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <div
+          class="sc-bkbkJK duhwYw"
+        >
+          <span
+            class="sc-iemWCZ iyOWzq"
+          >
+            Your Photos
+          </span>
+          <div
+            class="sc-hHEiqL jWQJxi"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              />
+            </svg>
+            <span
+              class="sc-kfYoZR fIMaiM"
+            >
+              Search by title
+            </span>
+            <input
+              class="sc-dlMDgC fEVeCl"
+              type="text"
+            />
+          </div>
+          <button
+            class="sc-dIvrsQ jxlbCO"
+          >
+            SEARCH
+          </button>
+        </div>
+        <div
+          data-testid="testPhoto"
+        >
+          <div
+            class="sc-dlnjwi kpVhWC"
+          >
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="accusamus beatae ad facilis cum similique qui sunt"
+                src="https://via.placeholder.com/150/92c952"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                accusamus beatae ad facilis cum similique qui sunt
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="reprehenderit est deserunt velit ipsam"
+                src="https://via.placeholder.com/150/771796"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                reprehenderit est deserunt velit ipsam
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="officia porro iure quia iusto qui ipsa ut modi"
+                src="https://via.placeholder.com/150/24f355"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                officia porro iure quia iusto qui ipsa ut modi
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="culpa odio esse rerum omnis laboriosam voluptate repudiandae"
+                src="https://via.placeholder.com/150/d32776"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                culpa odio esse rerum omnis laboriosam voluptate repudiandae
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="natus nisi omnis corporis facere molestiae rerum in"
+                src="https://via.placeholder.com/150/f66b97"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                natus nisi omnis corporis facere molestiae rerum in
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="accusamus ea aliquid et amet sequi nemo"
+                src="https://via.placeholder.com/150/56a8c2"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                accusamus ea aliquid et amet sequi nemo
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="officia delectus consequatur vero aut veniam explicabo molestias"
+                src="https://via.placeholder.com/150/b0f7cc"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                officia delectus consequatur vero aut veniam explicabo molestias
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="aut porro officiis laborum odit ea laudantium corporis"
+                src="https://via.placeholder.com/150/54176f"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                aut porro officiis laborum odit ea laudantium corporis
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="qui eius qui autem sed"
+                src="https://via.placeholder.com/150/51aa97"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                qui eius qui autem sed
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+            >
+              <img
+                alt="beatae et provident et ut vel"
+                src="https://via.placeholder.com/150/810b14"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                beatae et provident et ut vel
+              </span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="sc-jrsJWt cypHCg"
+          >
+            <div
+              class="sc-fnVZcZ dRnWYw"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"
+                />
+              </svg>
+              <div
+                class="sc-fFSPTT fLhJfU active"
+              >
+                1
+              </div>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                />
+              </svg>
+            </div>
+            <div
+              class="sc-iqAclL jtBzoG"
+            >
+              <div
+                class="sc-crzoAE lkwUSO"
+                data-testid="testButton"
+              >
+                <span
+                  class="sc-hBMUJo hMsLWB"
+                >
+                  Per page
+                </span>
+                <div
+                  class="sc-ksluID gdOUob"
+                >
+                  12
+                </div>
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 10l5 5 5-5z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="sc-dIsUp leREAs hidden"
+                data-testid="testList"
+              >
+                <div
+                  class="sc-bqGGPW jZazZi"
+                >
+                  12
+                </div>
+                <div
+                  class="sc-bqGGPW jZazZi"
+                >
+                  16
+                </div>
+                <div
+                  class="sc-bqGGPW jZazZi"
+                >
+                  20
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <div
+        class="sc-bkbkJK duhwYw"
+      >
+        <span
+          class="sc-iemWCZ iyOWzq"
+        >
+          Your Photos
+        </span>
+        <div
+          class="sc-hHEiqL jWQJxi"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            />
+          </svg>
+          <span
+            class="sc-kfYoZR fIMaiM"
+          >
+            Search by title
+          </span>
+          <input
+            class="sc-dlMDgC fEVeCl"
+            type="text"
+          />
+        </div>
+        <button
+          class="sc-dIvrsQ jxlbCO"
+        >
+          SEARCH
+        </button>
+      </div>
+      <div
+        data-testid="testPhoto"
+      >
+        <div
+          class="sc-dlnjwi kpVhWC"
+        >
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="accusamus beatae ad facilis cum similique qui sunt"
+              src="https://via.placeholder.com/150/92c952"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              accusamus beatae ad facilis cum similique qui sunt
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="reprehenderit est deserunt velit ipsam"
+              src="https://via.placeholder.com/150/771796"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              reprehenderit est deserunt velit ipsam
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="officia porro iure quia iusto qui ipsa ut modi"
+              src="https://via.placeholder.com/150/24f355"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              officia porro iure quia iusto qui ipsa ut modi
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="culpa odio esse rerum omnis laboriosam voluptate repudiandae"
+              src="https://via.placeholder.com/150/d32776"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              culpa odio esse rerum omnis laboriosam voluptate repudiandae
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="natus nisi omnis corporis facere molestiae rerum in"
+              src="https://via.placeholder.com/150/f66b97"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              natus nisi omnis corporis facere molestiae rerum in
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="accusamus ea aliquid et amet sequi nemo"
+              src="https://via.placeholder.com/150/56a8c2"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              accusamus ea aliquid et amet sequi nemo
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="officia delectus consequatur vero aut veniam explicabo molestias"
+              src="https://via.placeholder.com/150/b0f7cc"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              officia delectus consequatur vero aut veniam explicabo molestias
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="aut porro officiis laborum odit ea laudantium corporis"
+              src="https://via.placeholder.com/150/54176f"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              aut porro officiis laborum odit ea laudantium corporis
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="qui eius qui autem sed"
+              src="https://via.placeholder.com/150/51aa97"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              qui eius qui autem sed
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+          >
+            <img
+              alt="beatae et provident et ut vel"
+              src="https://via.placeholder.com/150/810b14"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              beatae et provident et ut vel
+            </span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class="sc-jrsJWt cypHCg"
+        >
+          <div
+            class="sc-fnVZcZ dRnWYw"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"
+              />
+            </svg>
+            <div
+              class="sc-fFSPTT fLhJfU active"
+            >
+              1
+            </div>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
+          </div>
+          <div
+            class="sc-iqAclL jtBzoG"
+          >
+            <div
+              class="sc-crzoAE lkwUSO"
+              data-testid="testButton"
+            >
+              <span
+                class="sc-hBMUJo hMsLWB"
+              >
+                Per page
+              </span>
+              <div
+                class="sc-ksluID gdOUob"
+              >
+                12
+              </div>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </div>
+            <div
+              class="sc-dIsUp leREAs hidden"
+              data-testid="testList"
+            >
+              <div
+                class="sc-bqGGPW jZazZi"
+              >
+                12
+              </div>
+              <div
+                class="sc-bqGGPW jZazZi"
+              >
+                16
+              </div>
+              <div
+                class="sc-bqGGPW jZazZi"
+              >
+                20
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
 `;

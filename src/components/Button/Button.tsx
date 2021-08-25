@@ -1,5 +1,4 @@
-///<reference path="Button.d.ts"/>
-
+import { ButtonProps } from "./Button.d";
 import React from "react";
 import { Wrapper } from "./Button.styled";
 
