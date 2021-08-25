@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-bdnxRM kJPHt"
+  onClick={[Function]}
+>
+  <img
+    alt="one"
+    src="https://via.placeholder.com/600/92c952"
+  />
+  <span
+    className="sc-gtsrHT dbOeOW"
+  >
+    one
+  </span>
+</div>
+`;

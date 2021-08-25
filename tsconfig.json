@@ -21,6 +21,9 @@
     "noEmit": true,
   },
   "include": [
-    "src/components/AlbumCard/*.d.ts"
+    "src/**/*.d.ts"
+  ],
+  "exclude": [
+    "src/pages/Profile/Profile.test.tsx"
   ]
 }
