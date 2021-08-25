@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Albums from "../Albums/Albums";
 import NavBar from "../../components/NavBar/NavBar";
 import Photos from "../Photos/Photos";
+import Profile from "../Profile/Profile"
 import React from "react";
 import styled from "styled-components";
 
@@ -18,8 +19,8 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Photos} />
         <Route exact path="/albums" component={Albums} />
-        <Route path="/albums/:number/photos" component={Photos} />
-        <Route path="/profile/:number" />
+        <Route path="/albums/:id/photos" component={Photos} />
+        <Route path="/profile/:id" component={Profile}/>
       </Switch>
     </Layout>
   </BrowserRouter>

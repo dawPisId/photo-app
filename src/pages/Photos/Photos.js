@@ -19,17 +19,18 @@ function Photos({ match }) {
   const [isZoomed, setIsZoomed] = useState(false);
   const [zoomUrl, setZoomUrl] = useState("");
   const [zoomLabel, setZoomLabel] = useState("");
-  const [albumVariant, setAlbumVariant] = useState("photos");
+
 
   useEffect(() => {
-    if (typeof match.params.number === 'string') {
-      setAlbumVariant(`albums/${match.params.number}/photos`);
+    let path;
+    if (typeof match.params.id === 'string') {
+      path = `albums/${match.params.id}/photos`;
     } else {
-      setAlbumVariant("photos");
+      path = "photos";
     }
     let firstPhotoIndex = (page - 1) * itemsPerPage;
     setIsLoading(true);
-    fetch(`${URL}/${albumVariant}?q=${query}`)
+    fetch(`${URL}/${path}?q=${query}`)
       .then((response) => response.json())
       .then((responseData) => {
         setPageCount(Math.ceil(responseData.length / itemsPerPage));
@@ -43,7 +44,7 @@ function Photos({ match }) {
       .finally(() => {
         setIsLoading(false);
       });
-  }, [itemsPerPage, match.params.number, albumVariant, page, query]);
+  }, [itemsPerPage, match.params.id, page, query]);
 
   return (
     <div>
