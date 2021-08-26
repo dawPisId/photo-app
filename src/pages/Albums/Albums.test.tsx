@@ -1,63 +1,17 @@
 import { BrowserRouter, Route } from "react-router-dom";
-import { render, waitFor } from "@testing-library/react";
+import {
+  act,
+  fireEvent,
+  render,
+  screen,
+  waitFor,
+} from "@testing-library/react";
 
 import Albums from "./Albums";
 import React from "react";
+import { mockAlbumsData } from "../../MockAPIOutputs";
 
 //TODO: possibly move the Data consts to different files.
-
-const mockResponseData = [
-  {
-    userId: 1,
-    id: 1,
-    title: "quidem molestiae enim",
-  },
-  {
-    userId: 1,
-    id: 2,
-    title: "sunt qui excepturi placeat culpa",
-  },
-  {
-    userId: 1,
-    id: 3,
-    title: "omnis laborum odio",
-  },
-  {
-    userId: 1,
-    id: 4,
-    title: "non esse culpa molestiae omnis sed optio",
-  },
-  {
-    userId: 1,
-    id: 5,
-    title: "eaque aut omnis a",
-  },
-  {
-    userId: 1,
-    id: 6,
-    title: "natus impedit quibusdam illo est",
-  },
-  {
-    userId: 1,
-    id: 7,
-    title: "quibusdam autem aliquid et et quia",
-  },
-  {
-    userId: 1,
-    id: 8,
-    title: "qui fuga est a eum",
-  },
-  {
-    userId: 1,
-    id: 9,
-    title: "saepe unde necessitatibus rem",
-  },
-  {
-    userId: 1,
-    id: 10,
-    title: "distinctio laborum qui",
-  },
-];
 
 it("displays the loader when loading", () => {
   const testRender = render(
@@ -70,7 +24,7 @@ it("displays the loader when loading", () => {
 
 it("renders correctly", async () => {
   const mockFetch = Promise.resolve({
-    json: () => Promise.resolve(mockResponseData),
+    json: () => Promise.resolve(mockAlbumsData),
   });
   jest.spyOn(window, "fetch").mockImplementationOnce(() => mockFetch as any);
   const testRender = render(
@@ -80,4 +34,29 @@ it("renders correctly", async () => {
   );
   await waitFor(() => testRender.getByTestId("testAlbum"));
   expect(testRender).toMatchSnapshot();
+});
+
+it("changes per page count", async () => {
+  const mockFetch = Promise.resolve({
+    json: () => Promise.resolve(mockAlbumsData),
+  });
+  jest.spyOn(window, "fetch").mockImplementation(() => mockFetch as any);
+  await act(async () => {
+    const testRender = render(
+      <BrowserRouter>
+        <Route exact path="/" component={Albums} />
+      </BrowserRouter>
+    );
+    await waitFor(() => testRender.getAllByTestId("testAlbumCard"));
+    fireEvent.click(screen.getByTestId("testList"));
+    await waitFor(() => testRender.getAllByTestId("testListItem"));
+    fireEvent.click(screen.getAllByTestId("testListItem")[1]);
+    testRender.rerender(
+      <BrowserRouter>
+        <Route exact path="/" component={Albums} />
+      </BrowserRouter>
+    );
+    await waitFor(() => testRender.getAllByTestId("testAlbumCard"));
+    expect(testRender.getAllByTestId("testAlbumCard").length).toEqual(16);
+  });
 });

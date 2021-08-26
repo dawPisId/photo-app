@@ -19,7 +19,7 @@ const AlbumCard: React.FC<AlbumCardProps> = ({ name, albumNumber }) => {
       });
   }, [albumNumber]);
   return (
-    <Layout>
+    <Layout data-testid="testAlbumCard">
       <Label>{name}</Label>
       <ImageRow data-testid="imageRow">
         {photos.map((link, index) => (

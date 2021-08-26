@@ -1,102 +1,84 @@
 import "@testing-library/jest-dom/extend-expect";
 
 import { BrowserRouter, Route } from "react-router-dom";
-import { render, waitFor, waitForElement } from "@testing-library/react";
+import {
+  act,
+  fireEvent,
+  render,
+  screen,
+  waitFor,
+} from "@testing-library/react";
+import { mockPhotosData, mockZoomData } from '../../MockAPIOutputs';
 
 import Photos from "./Photos";
 import React from "react";
 
-const mockResponseData = [
-  {
-    albumId: 1,
-    id: 1,
-    title: "accusamus beatae ad facilis cum similique qui sunt",
-    url: "https://via.placeholder.com/600/92c952",
-    thumbnailUrl: "https://via.placeholder.com/150/92c952",
-  },
-  {
-    albumId: 1,
-    id: 2,
-    title: "reprehenderit est deserunt velit ipsam",
-    url: "https://via.placeholder.com/600/771796",
-    thumbnailUrl: "https://via.placeholder.com/150/771796",
-  },
-  {
-    albumId: 1,
-    id: 3,
-    title: "officia porro iure quia iusto qui ipsa ut modi",
-    url: "https://via.placeholder.com/600/24f355",
-    thumbnailUrl: "https://via.placeholder.com/150/24f355",
-  },
-  {
-    albumId: 1,
-    id: 4,
-    title: "culpa odio esse rerum omnis laboriosam voluptate repudiandae",
-    url: "https://via.placeholder.com/600/d32776",
-    thumbnailUrl: "https://via.placeholder.com/150/d32776",
-  },
-  {
-    albumId: 1,
-    id: 5,
-    title: "natus nisi omnis corporis facere molestiae rerum in",
-    url: "https://via.placeholder.com/600/f66b97",
-    thumbnailUrl: "https://via.placeholder.com/150/f66b97",
-  },
-  {
-    albumId: 1,
-    id: 6,
-    title: "accusamus ea aliquid et amet sequi nemo",
-    url: "https://via.placeholder.com/600/56a8c2",
-    thumbnailUrl: "https://via.placeholder.com/150/56a8c2",
-  },
-  {
-    albumId: 1,
-    id: 7,
-    title: "officia delectus consequatur vero aut veniam explicabo molestias",
-    url: "https://via.placeholder.com/600/b0f7cc",
-    thumbnailUrl: "https://via.placeholder.com/150/b0f7cc",
-  },
-  {
-    albumId: 1,
-    id: 8,
-    title: "aut porro officiis laborum odit ea laudantium corporis",
-    url: "https://via.placeholder.com/600/54176f",
-    thumbnailUrl: "https://via.placeholder.com/150/54176f",
-  },
-  {
-    albumId: 1,
-    id: 9,
-    title: "qui eius qui autem sed",
-    url: "https://via.placeholder.com/600/51aa97",
-    thumbnailUrl: "https://via.placeholder.com/150/51aa97",
-  },
-  {
-    albumId: 1,
-    id: 10,
-    title: "beatae et provident et ut vel",
-    url: "https://via.placeholder.com/600/810b14",
-    thumbnailUrl: "https://via.placeholder.com/150/810b14",
-  },
-];
 it("displays the loader when loading", () => {
-  const testRender = render(
-    <BrowserRouter>
-      <Route exact path="/" component={Photos} />
-    </BrowserRouter>
-  );
-  expect(testRender).toMatchSnapshot();
+  act(() => {
+    const testRender = render(
+      <BrowserRouter>
+        <Route exact path="/" component={Photos} />
+      </BrowserRouter>
+    );
+    expect(testRender).toMatchSnapshot();
+  });
 });
 
 it("renders correctly", async () => {
   const mockFetch = Promise.resolve({
-    json: () => Promise.resolve(mockResponseData),
+    json: () => Promise.resolve(mockPhotosData),
   });
   jest.spyOn(window, "fetch").mockImplementationOnce(() => mockFetch as any);
-  const testRender = render(
-    <BrowserRouter>
-      <Route exact path="/" component={Photos} />
-    </BrowserRouter>
-  );
-  await waitFor(() => testRender.getByTestId("testPhoto"));
-  expect(testRender).toMatchSnapshot();
+  await act(async () => {
+    const testRender = render(
+      <BrowserRouter>
+        <Route exact path="/" component={Photos} />
+      </BrowserRouter>
+    );
+    await waitFor(() => testRender.getByTestId("testPhoto"));
+    expect(testRender).toMatchSnapshot();
+  });
+});
+
+it("displays zoomed image on card click", async () => {
+  const mockFetch = Promise.resolve({
+    json: () => Promise.resolve(mockZoomData),
+  });
+  jest.spyOn(window, "fetch").mockImplementationOnce(() => mockFetch as any);
+  await act(async () => {
+    const testRender = render(
+      <BrowserRouter>
+        <Route exact path="/" component={Photos} />
+      </BrowserRouter>
+    );
+    await waitFor(() => testRender.getByTestId("testCard"));
+    fireEvent.click(screen.getByTestId("testCard"));
+    await waitFor(() => testRender.getByTestId("testZoom"));
+    expect(testRender).toMatchSnapshot();
+  });
+});
+
+it("changes per page count", async () => {
+  const mockFetch = Promise.resolve({
+    json: () => Promise.resolve(mockPhotosData),
+  });
+  jest.spyOn(window, "fetch").mockImplementation(() => mockFetch as any);
+  await act(async () => {
+    const testRender = render(
+      <BrowserRouter>
+        <Route exact path="/" component={Photos} />
+      </BrowserRouter>
+    );
+    await waitFor(() => testRender.getAllByTestId("testCard"));
+    fireEvent.click(screen.getByTestId("testList"));
+    await waitFor(() => testRender.getAllByTestId("testListItem"));
+    fireEvent.click(screen.getAllByTestId("testListItem")[1]);
+    testRender.rerender(
+      <BrowserRouter>
+        <Route exact path="/" component={Photos} />
+      </BrowserRouter>
+    );
+    await waitFor(() => testRender.getAllByTestId("testCard"));
+    expect(testRender.getAllByTestId("testCard").length).toEqual(16);
+  });
 });
