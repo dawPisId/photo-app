@@ -6,7 +6,12 @@ export interface StateProps {
   thumbnailUrl: string;
 }
 export interface AlbumCardProps {
+  /**
+   * Album name.
+   */
   name: string;
+  /**
+   * Album number used for photo fetching.
+   */
   albumNumber: number;
 }
-

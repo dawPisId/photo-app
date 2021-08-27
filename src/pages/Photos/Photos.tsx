@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 
 import Card from "../../components/Card/Card";
 import Grid from "../../components/Grid/Grid";
@@ -11,7 +11,10 @@ import { idInterface } from "./Photos.d";
 import { useParams } from "react-router-dom";
 import { zoom } from "../../components/PageSelect/helpers";
 
-const Photos: React.FC = () => {
+/**
+ * Component used to display the final layout of the Photos page.
+ */
+const Photos: FC = () => {
   const [query, setQuery] = useState("");
   const [photos, setPhotos] = useState([]);
   const [page, setPage] = useState(1);
@@ -48,7 +51,7 @@ const Photos: React.FC = () => {
     <div>
       {isZoomed && (
         <ImageZoom
-          data-testid = "testZoom"
+          data-testid="testZoom"
           setZoomTrigger={setIsZoomed}
           imgUrl={zoomUrl}
           imgLabel={zoomLabel}

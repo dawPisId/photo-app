@@ -1,12 +1,12 @@
 import { Container, SelectItem } from "./PageSelectItems.styled";
+import React, { FC } from "react";
 import { next, prev, range } from "../PageSelect/helpers";
 
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { PageItemProps } from "./PageSelectItems.d";
-import React from "react";
 
-const PageSelectItems: React.FC<PageItemProps> = ({
+const PageSelectItems: FC<PageItemProps> = ({
   currentPage,
   setCurrentPage,
   pageCount,

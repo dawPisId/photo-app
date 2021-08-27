@@ -1,5 +1,6 @@
+import React, { FC } from "react";
+
 import { ButtonProps } from "./Button.d";
-import React from "react";
 import { Wrapper } from "./Button.styled";
 
 const performFunction = (
@@ -10,7 +11,10 @@ const performFunction = (
   action();
 };
 
-const Button: React.FC<ButtonProps> = ({ name, action }) => (
+/**
+ * Button component used mainly for the top search bar.
+ */
+const Button: FC<ButtonProps> = ({ name, action }) => (
   <Wrapper
     onClick={(e) => {
       performFunction(e, action);

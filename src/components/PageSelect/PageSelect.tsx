@@ -7,14 +7,17 @@ import {
   ItemCountWrapper,
   SelectContainer,
 } from "./PageSelect.styled";
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import { changeItemCount, counts } from "./helpers";
 
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import PageSelectItems from "../PageSelectItems/PageSelectItems";
 import { PageSelectProps } from './PageSelect.d';
 
-const PageSelect: React.FC<PageSelectProps> = ({
+/**
+ * Page selector component used for pagination in Photos and Albums Pages.
+ */
+const PageSelect: FC<PageSelectProps> = ({
   currentPage,
   currentPageSetter,
   pagesCount,

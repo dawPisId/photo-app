@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 
 import AlbumCard from "../../components/AlbumCard/AlbumCard";
 import AlbumGrid from "../../components/AlbumGrid/AlbumGrid";
@@ -8,7 +8,10 @@ import PageSelect from "../../components/PageSelect/PageSelect";
 import TopSearchBar from "../../components/TopSearchBar/TopSearchBar";
 import { URL } from "../../APIAddress";
 
-const Albums: React.FC = () => {
+/**
+ * Component used to display the final layout of the Albums page.
+ */
+const Albums: FC = () => {
   const [query, setQuery] = useState("");
   const [albums, setAlbums] = useState<AlbumsProps[]>([]);
   const [page, setPage] = useState(1);
