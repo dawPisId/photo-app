@@ -48,6 +48,7 @@ const Photos: React.FC = () => {
     <div>
       {isZoomed && (
         <ImageZoom
+          data-testid = "testZoom"
           setZoomTrigger={setIsZoomed}
           imgUrl={zoomUrl}
           imgLabel={zoomLabel}

@@ -9,7 +9,7 @@ const ImageZoom: React.FC<ImageZoomProps> = ({
   imgUrl,
   imgLabel,
 }) => (
-  <Background>
+  <Background data-testid = "testZoom">
     <CloseButton data-testid = "testButton" onClick={(e) => setZoomTrigger(false)}>
       <CloseIcon />
     </CloseButton>

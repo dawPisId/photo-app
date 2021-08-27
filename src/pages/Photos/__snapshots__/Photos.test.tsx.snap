@@ -129,16 +129,19 @@ Object {
               >
                 <div
                   class="sc-bqGGPW jZazZi"
+                  data-testid="testListItem"
                 >
                   12
                 </div>
                 <div
                   class="sc-bqGGPW jZazZi"
+                  data-testid="testListItem"
                 >
                   16
                 </div>
                 <div
                   class="sc-bqGGPW jZazZi"
+                  data-testid="testListItem"
                 >
                   20
                 </div>
@@ -274,16 +277,19 @@ Object {
             >
               <div
                 class="sc-bqGGPW jZazZi"
+                data-testid="testListItem"
               >
                 12
               </div>
               <div
                 class="sc-bqGGPW jZazZi"
+                data-testid="testListItem"
               >
                 16
               </div>
               <div
                 class="sc-bqGGPW jZazZi"
+                data-testid="testListItem"
               >
                 20
               </div>
@@ -347,12 +353,45 @@ Object {
 }
 `;
 
-exports[`render correctly 1`] = `
+exports[`displays zoomed image on card click 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div>
+        <div
+          class="sc-eCApnc iHywwZ"
+          data-testid="testZoom"
+        >
+          <div
+            class="sc-hKFxyN kjqdfi"
+            data-testid="testButton"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </div>
+          <div
+            class="sc-jSFjdj hzPZrC"
+          >
+            <img
+              alt=""
+              src="https://via.placeholder.com/600/810b14"
+            />
+          </div>
+          <div
+            class="sc-gKAaRy ifyRjB"
+          >
+            beatae et provident et ut vel
+          </div>
+        </div>
         <div
           class="sc-bkbkJK duhwYw"
         >
@@ -398,123 +437,7 @@ Object {
           >
             <div
               class="sc-bdnxRM kJPHt"
-            >
-              <img
-                alt="accusamus beatae ad facilis cum similique qui sunt"
-                src="https://via.placeholder.com/150/92c952"
-              />
-              <span
-                class="sc-gtsrHT dbOeOW"
-              >
-                accusamus beatae ad facilis cum similique qui sunt
-              </span>
-            </div>
-            <div
-              class="sc-bdnxRM kJPHt"
-            >
-              <img
-                alt="reprehenderit est deserunt velit ipsam"
-                src="https://via.placeholder.com/150/771796"
-              />
-              <span
-                class="sc-gtsrHT dbOeOW"
-              >
-                reprehenderit est deserunt velit ipsam
-              </span>
-            </div>
-            <div
-              class="sc-bdnxRM kJPHt"
-            >
-              <img
-                alt="officia porro iure quia iusto qui ipsa ut modi"
-                src="https://via.placeholder.com/150/24f355"
-              />
-              <span
-                class="sc-gtsrHT dbOeOW"
-              >
-                officia porro iure quia iusto qui ipsa ut modi
-              </span>
-            </div>
-            <div
-              class="sc-bdnxRM kJPHt"
-            >
-              <img
-                alt="culpa odio esse rerum omnis laboriosam voluptate repudiandae"
-                src="https://via.placeholder.com/150/d32776"
-              />
-              <span
-                class="sc-gtsrHT dbOeOW"
-              >
-                culpa odio esse rerum omnis laboriosam voluptate repudiandae
-              </span>
-            </div>
-            <div
-              class="sc-bdnxRM kJPHt"
-            >
-              <img
-                alt="natus nisi omnis corporis facere molestiae rerum in"
-                src="https://via.placeholder.com/150/f66b97"
-              />
-              <span
-                class="sc-gtsrHT dbOeOW"
-              >
-                natus nisi omnis corporis facere molestiae rerum in
-              </span>
-            </div>
-            <div
-              class="sc-bdnxRM kJPHt"
-            >
-              <img
-                alt="accusamus ea aliquid et amet sequi nemo"
-                src="https://via.placeholder.com/150/56a8c2"
-              />
-              <span
-                class="sc-gtsrHT dbOeOW"
-              >
-                accusamus ea aliquid et amet sequi nemo
-              </span>
-            </div>
-            <div
-              class="sc-bdnxRM kJPHt"
-            >
-              <img
-                alt="officia delectus consequatur vero aut veniam explicabo molestias"
-                src="https://via.placeholder.com/150/b0f7cc"
-              />
-              <span
-                class="sc-gtsrHT dbOeOW"
-              >
-                officia delectus consequatur vero aut veniam explicabo molestias
-              </span>
-            </div>
-            <div
-              class="sc-bdnxRM kJPHt"
-            >
-              <img
-                alt="aut porro officiis laborum odit ea laudantium corporis"
-                src="https://via.placeholder.com/150/54176f"
-              />
-              <span
-                class="sc-gtsrHT dbOeOW"
-              >
-                aut porro officiis laborum odit ea laudantium corporis
-              </span>
-            </div>
-            <div
-              class="sc-bdnxRM kJPHt"
-            >
-              <img
-                alt="qui eius qui autem sed"
-                src="https://via.placeholder.com/150/51aa97"
-              />
-              <span
-                class="sc-gtsrHT dbOeOW"
-              >
-                qui eius qui autem sed
-              </span>
-            </div>
-            <div
-              class="sc-bdnxRM kJPHt"
+              data-testid="testCard"
             >
               <img
                 alt="beatae et provident et ut vel"
@@ -595,16 +518,19 @@ Object {
               >
                 <div
                   class="sc-bqGGPW jZazZi"
+                  data-testid="testListItem"
                 >
                   12
                 </div>
                 <div
                   class="sc-bqGGPW jZazZi"
+                  data-testid="testListItem"
                 >
                   16
                 </div>
                 <div
                   class="sc-bqGGPW jZazZi"
+                  data-testid="testListItem"
                 >
                   20
                 </div>
@@ -617,6 +543,39 @@ Object {
   </body>,
   "container": <div>
     <div>
+      <div
+        class="sc-eCApnc iHywwZ"
+        data-testid="testZoom"
+      >
+        <div
+          class="sc-hKFxyN kjqdfi"
+          data-testid="testButton"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            />
+          </svg>
+        </div>
+        <div
+          class="sc-jSFjdj hzPZrC"
+        >
+          <img
+            alt=""
+            src="https://via.placeholder.com/600/810b14"
+          />
+        </div>
+        <div
+          class="sc-gKAaRy ifyRjB"
+        >
+          beatae et provident et ut vel
+        </div>
+      </div>
       <div
         class="sc-bkbkJK duhwYw"
       >
@@ -662,123 +621,7 @@ Object {
         >
           <div
             class="sc-bdnxRM kJPHt"
-          >
-            <img
-              alt="accusamus beatae ad facilis cum similique qui sunt"
-              src="https://via.placeholder.com/150/92c952"
-            />
-            <span
-              class="sc-gtsrHT dbOeOW"
-            >
-              accusamus beatae ad facilis cum similique qui sunt
-            </span>
-          </div>
-          <div
-            class="sc-bdnxRM kJPHt"
-          >
-            <img
-              alt="reprehenderit est deserunt velit ipsam"
-              src="https://via.placeholder.com/150/771796"
-            />
-            <span
-              class="sc-gtsrHT dbOeOW"
-            >
-              reprehenderit est deserunt velit ipsam
-            </span>
-          </div>
-          <div
-            class="sc-bdnxRM kJPHt"
-          >
-            <img
-              alt="officia porro iure quia iusto qui ipsa ut modi"
-              src="https://via.placeholder.com/150/24f355"
-            />
-            <span
-              class="sc-gtsrHT dbOeOW"
-            >
-              officia porro iure quia iusto qui ipsa ut modi
-            </span>
-          </div>
-          <div
-            class="sc-bdnxRM kJPHt"
-          >
-            <img
-              alt="culpa odio esse rerum omnis laboriosam voluptate repudiandae"
-              src="https://via.placeholder.com/150/d32776"
-            />
-            <span
-              class="sc-gtsrHT dbOeOW"
-            >
-              culpa odio esse rerum omnis laboriosam voluptate repudiandae
-            </span>
-          </div>
-          <div
-            class="sc-bdnxRM kJPHt"
-          >
-            <img
-              alt="natus nisi omnis corporis facere molestiae rerum in"
-              src="https://via.placeholder.com/150/f66b97"
-            />
-            <span
-              class="sc-gtsrHT dbOeOW"
-            >
-              natus nisi omnis corporis facere molestiae rerum in
-            </span>
-          </div>
-          <div
-            class="sc-bdnxRM kJPHt"
-          >
-            <img
-              alt="accusamus ea aliquid et amet sequi nemo"
-              src="https://via.placeholder.com/150/56a8c2"
-            />
-            <span
-              class="sc-gtsrHT dbOeOW"
-            >
-              accusamus ea aliquid et amet sequi nemo
-            </span>
-          </div>
-          <div
-            class="sc-bdnxRM kJPHt"
-          >
-            <img
-              alt="officia delectus consequatur vero aut veniam explicabo molestias"
-              src="https://via.placeholder.com/150/b0f7cc"
-            />
-            <span
-              class="sc-gtsrHT dbOeOW"
-            >
-              officia delectus consequatur vero aut veniam explicabo molestias
-            </span>
-          </div>
-          <div
-            class="sc-bdnxRM kJPHt"
-          >
-            <img
-              alt="aut porro officiis laborum odit ea laudantium corporis"
-              src="https://via.placeholder.com/150/54176f"
-            />
-            <span
-              class="sc-gtsrHT dbOeOW"
-            >
-              aut porro officiis laborum odit ea laudantium corporis
-            </span>
-          </div>
-          <div
-            class="sc-bdnxRM kJPHt"
-          >
-            <img
-              alt="qui eius qui autem sed"
-              src="https://via.placeholder.com/150/51aa97"
-            />
-            <span
-              class="sc-gtsrHT dbOeOW"
-            >
-              qui eius qui autem sed
-            </span>
-          </div>
-          <div
-            class="sc-bdnxRM kJPHt"
+            data-testid="testCard"
           >
             <img
               alt="beatae et provident et ut vel"
@@ -859,16 +702,19 @@ Object {
             >
               <div
                 class="sc-bqGGPW jZazZi"
+                data-testid="testListItem"
               >
                 12
               </div>
               <div
                 class="sc-bqGGPW jZazZi"
+                data-testid="testListItem"
               >
                 16
               </div>
               <div
                 class="sc-bqGGPW jZazZi"
+                data-testid="testListItem"
               >
                 20
               </div>
@@ -983,6 +829,7 @@ Object {
           >
             <div
               class="sc-bdnxRM kJPHt"
+              data-testid="testCard"
             >
               <img
                 alt="accusamus beatae ad facilis cum similique qui sunt"
@@ -996,6 +843,7 @@ Object {
             </div>
             <div
               class="sc-bdnxRM kJPHt"
+              data-testid="testCard"
             >
               <img
                 alt="reprehenderit est deserunt velit ipsam"
@@ -1009,6 +857,7 @@ Object {
             </div>
             <div
               class="sc-bdnxRM kJPHt"
+              data-testid="testCard"
             >
               <img
                 alt="officia porro iure quia iusto qui ipsa ut modi"
@@ -1022,6 +871,7 @@ Object {
             </div>
             <div
               class="sc-bdnxRM kJPHt"
+              data-testid="testCard"
             >
               <img
                 alt="culpa odio esse rerum omnis laboriosam voluptate repudiandae"
@@ -1035,6 +885,7 @@ Object {
             </div>
             <div
               class="sc-bdnxRM kJPHt"
+              data-testid="testCard"
             >
               <img
                 alt="natus nisi omnis corporis facere molestiae rerum in"
@@ -1048,6 +899,7 @@ Object {
             </div>
             <div
               class="sc-bdnxRM kJPHt"
+              data-testid="testCard"
             >
               <img
                 alt="accusamus ea aliquid et amet sequi nemo"
@@ -1061,6 +913,7 @@ Object {
             </div>
             <div
               class="sc-bdnxRM kJPHt"
+              data-testid="testCard"
             >
               <img
                 alt="officia delectus consequatur vero aut veniam explicabo molestias"
@@ -1074,6 +927,7 @@ Object {
             </div>
             <div
               class="sc-bdnxRM kJPHt"
+              data-testid="testCard"
             >
               <img
                 alt="aut porro officiis laborum odit ea laudantium corporis"
@@ -1087,6 +941,7 @@ Object {
             </div>
             <div
               class="sc-bdnxRM kJPHt"
+              data-testid="testCard"
             >
               <img
                 alt="qui eius qui autem sed"
@@ -1100,6 +955,7 @@ Object {
             </div>
             <div
               class="sc-bdnxRM kJPHt"
+              data-testid="testCard"
             >
               <img
                 alt="beatae et provident et ut vel"
@@ -1109,6 +965,34 @@ Object {
                 class="sc-gtsrHT dbOeOW"
               >
                 beatae et provident et ut vel
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+              data-testid="testCard"
+            >
+              <img
+                alt="nihil at amet non hic quia qui"
+                src="https://via.placeholder.com/150/1ee8a4"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                nihil at amet non hic quia qui
+              </span>
+            </div>
+            <div
+              class="sc-bdnxRM kJPHt"
+              data-testid="testCard"
+            >
+              <img
+                alt="mollitia soluta ut rerum eos aliquam consequatur perspiciatis maiores"
+                src="https://via.placeholder.com/150/66b7d2"
+              />
+              <span
+                class="sc-gtsrHT dbOeOW"
+              >
+                mollitia soluta ut rerum eos aliquam consequatur perspiciatis maiores
               </span>
             </div>
           </div>
@@ -1134,6 +1018,11 @@ Object {
                 class="sc-fFSPTT fLhJfU active"
               >
                 1
+              </div>
+              <div
+                class="sc-fFSPTT fLhJfU"
+              >
+                2
               </div>
               <svg
                 aria-hidden="true"
@@ -1180,16 +1069,19 @@ Object {
               >
                 <div
                   class="sc-bqGGPW jZazZi"
+                  data-testid="testListItem"
                 >
                   12
                 </div>
                 <div
                   class="sc-bqGGPW jZazZi"
+                  data-testid="testListItem"
                 >
                   16
                 </div>
                 <div
                   class="sc-bqGGPW jZazZi"
+                  data-testid="testListItem"
                 >
                   20
                 </div>
@@ -1247,6 +1139,7 @@ Object {
         >
           <div
             class="sc-bdnxRM kJPHt"
+            data-testid="testCard"
           >
             <img
               alt="accusamus beatae ad facilis cum similique qui sunt"
@@ -1260,6 +1153,7 @@ Object {
           </div>
           <div
             class="sc-bdnxRM kJPHt"
+            data-testid="testCard"
           >
             <img
               alt="reprehenderit est deserunt velit ipsam"
@@ -1273,6 +1167,7 @@ Object {
           </div>
           <div
             class="sc-bdnxRM kJPHt"
+            data-testid="testCard"
           >
             <img
               alt="officia porro iure quia iusto qui ipsa ut modi"
@@ -1286,6 +1181,7 @@ Object {
           </div>
           <div
             class="sc-bdnxRM kJPHt"
+            data-testid="testCard"
           >
             <img
               alt="culpa odio esse rerum omnis laboriosam voluptate repudiandae"
@@ -1299,6 +1195,7 @@ Object {
           </div>
           <div
             class="sc-bdnxRM kJPHt"
+            data-testid="testCard"
           >
             <img
               alt="natus nisi omnis corporis facere molestiae rerum in"
@@ -1312,6 +1209,7 @@ Object {
           </div>
           <div
             class="sc-bdnxRM kJPHt"
+            data-testid="testCard"
           >
             <img
               alt="accusamus ea aliquid et amet sequi nemo"
@@ -1325,6 +1223,7 @@ Object {
           </div>
           <div
             class="sc-bdnxRM kJPHt"
+            data-testid="testCard"
           >
             <img
               alt="officia delectus consequatur vero aut veniam explicabo molestias"
@@ -1338,6 +1237,7 @@ Object {
           </div>
           <div
             class="sc-bdnxRM kJPHt"
+            data-testid="testCard"
           >
             <img
               alt="aut porro officiis laborum odit ea laudantium corporis"
@@ -1351,6 +1251,7 @@ Object {
           </div>
           <div
             class="sc-bdnxRM kJPHt"
+            data-testid="testCard"
           >
             <img
               alt="qui eius qui autem sed"
@@ -1364,6 +1265,7 @@ Object {
           </div>
           <div
             class="sc-bdnxRM kJPHt"
+            data-testid="testCard"
           >
             <img
               alt="beatae et provident et ut vel"
@@ -1373,6 +1275,34 @@ Object {
               class="sc-gtsrHT dbOeOW"
             >
               beatae et provident et ut vel
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+            data-testid="testCard"
+          >
+            <img
+              alt="nihil at amet non hic quia qui"
+              src="https://via.placeholder.com/150/1ee8a4"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              nihil at amet non hic quia qui
+            </span>
+          </div>
+          <div
+            class="sc-bdnxRM kJPHt"
+            data-testid="testCard"
+          >
+            <img
+              alt="mollitia soluta ut rerum eos aliquam consequatur perspiciatis maiores"
+              src="https://via.placeholder.com/150/66b7d2"
+            />
+            <span
+              class="sc-gtsrHT dbOeOW"
+            >
+              mollitia soluta ut rerum eos aliquam consequatur perspiciatis maiores
             </span>
           </div>
         </div>
@@ -1398,6 +1328,11 @@ Object {
               class="sc-fFSPTT fLhJfU active"
             >
               1
+            </div>
+            <div
+              class="sc-fFSPTT fLhJfU"
+            >
+              2
             </div>
             <svg
               aria-hidden="true"
@@ -1444,16 +1379,19 @@ Object {
             >
               <div
                 class="sc-bqGGPW jZazZi"
+                data-testid="testListItem"
               >
                 12
               </div>
               <div
                 class="sc-bqGGPW jZazZi"
+                data-testid="testListItem"
               >
                 16
               </div>
               <div
                 class="sc-bqGGPW jZazZi"
+                data-testid="testListItem"
               >
                 20
               </div>

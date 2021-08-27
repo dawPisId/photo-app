@@ -39,6 +39,7 @@ const PageSelect: React.FC<PageSelectProps> = ({
           <ItemCountList data-testid = "testList" className={dropdownToggle ? "active" : "hidden"}>
             {counts.map((number, index) => (
               <ItemCountListItem
+                data-testid = "testListItem"
                 key={index}
                 onClick={() =>
                   changeItemCount(number, itemsPerPageSetter, setDropdownToggle)

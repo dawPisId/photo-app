@@ -230,6 +230,7 @@ Object {
           >
             <div
               class="sc-bdnxRM juqWpf"
+              data-testid="testAlbumCard"
             >
               <span
                 class="sc-gtsrHT YXTaF"
@@ -262,6 +263,7 @@ Object {
             </div>
             <div
               class="sc-bdnxRM juqWpf"
+              data-testid="testAlbumCard"
             >
               <span
                 class="sc-gtsrHT YXTaF"
@@ -294,6 +296,7 @@ Object {
             </div>
             <div
               class="sc-bdnxRM juqWpf"
+              data-testid="testAlbumCard"
             >
               <span
                 class="sc-gtsrHT YXTaF"
@@ -326,6 +329,7 @@ Object {
             </div>
             <div
               class="sc-bdnxRM juqWpf"
+              data-testid="testAlbumCard"
             >
               <span
                 class="sc-gtsrHT YXTaF"
@@ -358,6 +362,7 @@ Object {
             </div>
             <div
               class="sc-bdnxRM juqWpf"
+              data-testid="testAlbumCard"
             >
               <span
                 class="sc-gtsrHT YXTaF"
@@ -390,6 +395,7 @@ Object {
             </div>
             <div
               class="sc-bdnxRM juqWpf"
+              data-testid="testAlbumCard"
             >
               <span
                 class="sc-gtsrHT YXTaF"
@@ -422,6 +428,7 @@ Object {
             </div>
             <div
               class="sc-bdnxRM juqWpf"
+              data-testid="testAlbumCard"
             >
               <span
                 class="sc-gtsrHT YXTaF"
@@ -454,6 +461,7 @@ Object {
             </div>
             <div
               class="sc-bdnxRM juqWpf"
+              data-testid="testAlbumCard"
             >
               <span
                 class="sc-gtsrHT YXTaF"
@@ -486,6 +494,7 @@ Object {
             </div>
             <div
               class="sc-bdnxRM juqWpf"
+              data-testid="testAlbumCard"
             >
               <span
                 class="sc-gtsrHT YXTaF"
@@ -518,6 +527,7 @@ Object {
             </div>
             <div
               class="sc-bdnxRM juqWpf"
+              data-testid="testAlbumCard"
             >
               <span
                 class="sc-gtsrHT YXTaF"
@@ -530,6 +540,72 @@ Object {
               />
               <a
                 href="/albums/10/photos/"
+              >
+                <div
+                  class="sc-hKFxyN gSMifO"
+                >
+                  SEE MORE
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div
+              class="sc-bdnxRM juqWpf"
+              data-testid="testAlbumCard"
+            >
+              <span
+                class="sc-gtsrHT YXTaF"
+              >
+                quam nostrum impedit mollitia quod et dolor
+              </span>
+              <div
+                class="sc-dlnjwi iYBmHw"
+                data-testid="imageRow"
+              />
+              <a
+                href="/albums/11/photos/"
+              >
+                <div
+                  class="sc-hKFxyN gSMifO"
+                >
+                  SEE MORE
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div
+              class="sc-bdnxRM juqWpf"
+              data-testid="testAlbumCard"
+            >
+              <span
+                class="sc-gtsrHT YXTaF"
+              >
+                consequatur autem doloribus natus consectetur
+              </span>
+              <div
+                class="sc-dlnjwi iYBmHw"
+                data-testid="imageRow"
+              />
+              <a
+                href="/albums/12/photos/"
               >
                 <div
                   class="sc-hKFxyN gSMifO"
@@ -570,6 +646,11 @@ Object {
                   class="sc-hBMUJo bgjLTI active"
                 >
                   1
+                </div>
+                <div
+                  class="sc-hBMUJo bgjLTI"
+                >
+                  2
                 </div>
                 <svg
                   aria-hidden="true"
@@ -616,16 +697,19 @@ Object {
                 >
                   <div
                     class="sc-crzoAE dLmvma"
+                    data-testid="testListItem"
                   >
                     12
                   </div>
                   <div
                     class="sc-crzoAE dLmvma"
+                    data-testid="testListItem"
                   >
                     16
                   </div>
                   <div
                     class="sc-crzoAE dLmvma"
+                    data-testid="testListItem"
                   >
                     20
                   </div>
@@ -684,6 +768,7 @@ Object {
         >
           <div
             class="sc-bdnxRM juqWpf"
+            data-testid="testAlbumCard"
           >
             <span
               class="sc-gtsrHT YXTaF"
@@ -716,6 +801,7 @@ Object {
           </div>
           <div
             class="sc-bdnxRM juqWpf"
+            data-testid="testAlbumCard"
           >
             <span
               class="sc-gtsrHT YXTaF"
@@ -748,6 +834,7 @@ Object {
           </div>
           <div
             class="sc-bdnxRM juqWpf"
+            data-testid="testAlbumCard"
           >
             <span
               class="sc-gtsrHT YXTaF"
@@ -780,6 +867,7 @@ Object {
           </div>
           <div
             class="sc-bdnxRM juqWpf"
+            data-testid="testAlbumCard"
           >
             <span
               class="sc-gtsrHT YXTaF"
@@ -812,6 +900,7 @@ Object {
           </div>
           <div
             class="sc-bdnxRM juqWpf"
+            data-testid="testAlbumCard"
           >
             <span
               class="sc-gtsrHT YXTaF"
@@ -844,6 +933,7 @@ Object {
           </div>
           <div
             class="sc-bdnxRM juqWpf"
+            data-testid="testAlbumCard"
           >
             <span
               class="sc-gtsrHT YXTaF"
@@ -876,6 +966,7 @@ Object {
           </div>
           <div
             class="sc-bdnxRM juqWpf"
+            data-testid="testAlbumCard"
           >
             <span
               class="sc-gtsrHT YXTaF"
@@ -908,6 +999,7 @@ Object {
           </div>
           <div
             class="sc-bdnxRM juqWpf"
+            data-testid="testAlbumCard"
           >
             <span
               class="sc-gtsrHT YXTaF"
@@ -940,6 +1032,7 @@ Object {
           </div>
           <div
             class="sc-bdnxRM juqWpf"
+            data-testid="testAlbumCard"
           >
             <span
               class="sc-gtsrHT YXTaF"
@@ -972,6 +1065,7 @@ Object {
           </div>
           <div
             class="sc-bdnxRM juqWpf"
+            data-testid="testAlbumCard"
           >
             <span
               class="sc-gtsrHT YXTaF"
@@ -984,6 +1078,72 @@ Object {
             />
             <a
               href="/albums/10/photos/"
+            >
+              <div
+                class="sc-hKFxyN gSMifO"
+              >
+                SEE MORE
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div
+            class="sc-bdnxRM juqWpf"
+            data-testid="testAlbumCard"
+          >
+            <span
+              class="sc-gtsrHT YXTaF"
+            >
+              quam nostrum impedit mollitia quod et dolor
+            </span>
+            <div
+              class="sc-dlnjwi iYBmHw"
+              data-testid="imageRow"
+            />
+            <a
+              href="/albums/11/photos/"
+            >
+              <div
+                class="sc-hKFxyN gSMifO"
+              >
+                SEE MORE
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div
+            class="sc-bdnxRM juqWpf"
+            data-testid="testAlbumCard"
+          >
+            <span
+              class="sc-gtsrHT YXTaF"
+            >
+              consequatur autem doloribus natus consectetur
+            </span>
+            <div
+              class="sc-dlnjwi iYBmHw"
+              data-testid="imageRow"
+            />
+            <a
+              href="/albums/12/photos/"
             >
               <div
                 class="sc-hKFxyN gSMifO"
@@ -1024,6 +1184,11 @@ Object {
                 class="sc-hBMUJo bgjLTI active"
               >
                 1
+              </div>
+              <div
+                class="sc-hBMUJo bgjLTI"
+              >
+                2
               </div>
               <svg
                 aria-hidden="true"
@@ -1070,16 +1235,19 @@ Object {
               >
                 <div
                   class="sc-crzoAE dLmvma"
+                  data-testid="testListItem"
                 >
                   12
                 </div>
                 <div
                   class="sc-crzoAE dLmvma"
+                  data-testid="testListItem"
                 >
                   16
                 </div>
                 <div
                   class="sc-crzoAE dLmvma"
+                  data-testid="testListItem"
                 >
                   20
                 </div>

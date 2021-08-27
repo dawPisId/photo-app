@@ -106,18 +106,21 @@ exports[`renders correctly 1`] = `
       >
         <div
           className="sc-jSFjdj bXtTsJ"
+          data-testid="testListItem"
           onClick={[Function]}
         >
           12
         </div>
         <div
           className="sc-jSFjdj bXtTsJ"
+          data-testid="testListItem"
           onClick={[Function]}
         >
           16
         </div>
         <div
           className="sc-jSFjdj bXtTsJ"
+          data-testid="testListItem"
           onClick={[Function]}
         >
           20
