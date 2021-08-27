@@ -1,4 +1,4 @@
-interface AlbumsProps {
+export interface AlbumsProps {
   albumId: number;
   id: number;
   title: string;

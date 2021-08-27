@@ -1,4 +1,4 @@
-interface NavItemProps {
+export interface NavItemProps {
   label: string;
   link: string;
   isExact: boolean;

@@ -1,5 +1,3 @@
-///<reference path="PageSelect.d.ts"/>
-
 import {
   ItemCountButton,
   ItemCountLabel,
@@ -14,6 +12,7 @@ import { changeItemCount, counts } from "./helpers";
 
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import PageSelectItems from "../PageSelectItems/PageSelectItems";
+import { PageSelectProps } from './PageSelect.d';
 
 const PageSelect: React.FC<PageSelectProps> = ({
   currentPage,
@@ -32,12 +31,12 @@ const PageSelect: React.FC<PageSelectProps> = ({
           pageCount={pagesCount}
         />
         <ItemCountWrapper>
-          <ItemCountButton onClick={() => setDropdownToggle(!dropdownToggle)}>
+          <ItemCountButton data-testid = "testButton" onClick={() => setDropdownToggle(!dropdownToggle)}>
             <ItemCountLabel>Per page</ItemCountLabel>
             <ItemCountNumber>{itemCount}</ItemCountNumber>
             <ArrowDropDownIcon />
           </ItemCountButton>
-          <ItemCountList className={dropdownToggle ? "active" : "hidden"}>
+          <ItemCountList data-testid = "testList" className={dropdownToggle ? "active" : "hidden"}>
             {counts.map((number, index) => (
               <ItemCountListItem
                 key={index}

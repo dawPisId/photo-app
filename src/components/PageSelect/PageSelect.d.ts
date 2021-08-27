@@ -1,4 +1,4 @@
-interface PageSelectProps {
+export interface PageSelectProps {
   currentPage: number;
   currentPageSetter: (value: number) => void;
   pagesCount: number;

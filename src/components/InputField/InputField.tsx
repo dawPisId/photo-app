@@ -1,7 +1,6 @@
-///<reference path="InputField.d.ts"/>
-
 import { InputBox, InputLabel, InputWrapper } from "./InputField.styled";
 
+import { InputFieldProps } from "./InputField.d";
 import React from "react";
 
 const InputField: React.FC<InputFieldProps> = ({ label, fillValue }) => (

@@ -1,5 +1,3 @@
-///<reference path="AlbumGrid.d.ts"/>
-
 import { Layout } from "./AlbumGrid.styled";
 import React from "react";
 

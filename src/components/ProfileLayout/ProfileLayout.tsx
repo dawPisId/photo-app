@@ -1,5 +1,3 @@
-///<reference path="ProfileLayout.d.ts"/>
-
 import {
   CompanyLayout,
   FirstHeader,
@@ -11,6 +9,7 @@ import {
 
 import InputField from "../InputField/InputField";
 import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
+import { ProfileLayoutProps } from "./ProfileLayout.d";
 import React from "react";
 
 const ProfileLayout: React.FC<ProfileLayoutProps> = ({ user }) => {

@@ -1,5 +1,3 @@
-///<reference path="Grid.d.ts"/>
-
 import { Layout } from "./Grid.styled";
 import React from "react";
 

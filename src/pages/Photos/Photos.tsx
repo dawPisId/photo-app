@@ -1,5 +1,3 @@
-///<reference path="Photos.d.ts"/>
-
 import React, { useEffect, useState } from "react";
 
 import Card from "../../components/Card/Card";
@@ -9,6 +7,7 @@ import Loader from "../../components/Loader/Loader";
 import PageSelect from "../../components/PageSelect/PageSelect";
 import TopSearchBar from "../../components/TopSearchBar/TopSearchBar";
 import { URL } from "../../APIAddress";
+import { idInterface } from "./Photos.d";
 import { useParams } from "react-router-dom";
 import { zoom } from "../../components/PageSelect/helpers";
 
@@ -58,18 +57,20 @@ const Photos: React.FC = () => {
       {isLoading ? (
         <Loader />
       ) : (
-        <Grid>
-          {photos.map(({ id, title, thumbnailUrl, url }) => (
-            <Card
-              key={id}
-              name={title}
-              url={thumbnailUrl}
-              action={() => {
-                zoom(setIsZoomed, setZoomUrl, url, setZoomLabel, title);
-              }}
-            />
-          ))}
-        </Grid>
+        <div data-testid="testPhoto">
+          <Grid>
+            {photos.map(({ id, title, thumbnailUrl, url }) => (
+              <Card
+                key={id}
+                name={title}
+                url={thumbnailUrl}
+                action={() => {
+                  zoom(setIsZoomed, setZoomUrl, url, setZoomLabel, title);
+                }}
+              />
+            ))}
+          </Grid>
+        </div>
       )}
       <PageSelect
         currentPage={page}
