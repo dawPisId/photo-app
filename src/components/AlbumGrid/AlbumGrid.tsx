@@ -1,6 +1,7 @@
-import { Layout } from "./AlbumGrid.styled";
-import React from "react";
+import React, { FC } from "react";
 
-const AlbumGrid: React.FC<any> = ({ children }) => <Layout>{children}</Layout>;
+import { Layout } from "./AlbumGrid.styled";
+
+const AlbumGrid: FC<any> = ({ children }) => <Layout>{children}</Layout>;
 
 export default AlbumGrid;

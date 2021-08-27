@@ -1,11 +1,14 @@
 import { Container, Label } from "./TopSearchBar.styled";
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 
 import Button from "../../components/Button/Button";
 import Search from "../../components/Search/Search";
 import { TopSearchBarProps } from "./TopSearchBar.d";
 
-const TopSearchBar: React.FC<TopSearchBarProps> = ({
+/**
+ * Top search bar used for the search feature used on the Albums and Photos pages.
+ */
+const TopSearchBar: FC<TopSearchBarProps> = ({
   label,
   setSearchQuery,
 }) => {

@@ -1,6 +1,7 @@
-import { Layout } from "./Grid.styled";
-import React from "react";
+import React, { FC } from "react";
 
-const Grid: React.FC<any> = ({ children }) => <Layout>{children}</Layout>;
+import { Layout } from "./Grid.styled";
+
+const Grid: FC<any> = ({ children }) => <Layout>{children}</Layout>;
 
 export default Grid;

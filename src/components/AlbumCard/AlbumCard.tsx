@@ -1,12 +1,15 @@
 import { AlbumCardProps, StateProps } from "./AlbumCard.d";
 import { Button, ImageRow, Label, Layout } from "./AlbumCard.styled";
-import React, { useEffect, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { NavLink } from "react-router-dom";
 import { URL } from "../../APIAddress";
 
-const AlbumCard: React.FC<AlbumCardProps> = ({ name, albumNumber }) => {
+/**
+ * Album card component displaying the 3 first photos from an album, used for Albums page.
+ */
+const AlbumCard: FC<AlbumCardProps> = ({ name, albumNumber }) => {
   const [photos, setPhotos] = useState<StateProps[]>([]);
   useEffect(() => {
     fetch(`${URL}/albums/${albumNumber}/photos?_start=0&_end=3`)

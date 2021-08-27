@@ -1,5 +1,5 @@
 import { Container, Header } from "./Profile.styled";
-import React, { useEffect, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 
 import Loader from "../../components/Loader/Loader";
 import ProfileLayout from "../../components/ProfileLayout/ProfileLayout";
@@ -26,7 +26,10 @@ const initUser = {
   },
 };
 
-function Profile() {
+/**
+ * Component used to display the final layout of the Profile page.
+ */
+const Profile:FC = () => {
   const [user, setUser] = useState(initUser);
   const [isLoading, setIsLoading] = useState(true);
   const { id }: idInterface = useParams();

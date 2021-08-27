@@ -1,10 +1,13 @@
 import { Label, Layout } from "./Card.styled";
+import React, { FC } from "react";
 
 import { CardProps } from "./Card.d";
-import React from "react";
 
-const Card: React.FC<CardProps> = ({ name, url, action }) => (
-  <Layout data-testid = "testCard" onClick={action}>
+/**
+ * Card component used to display the photos on the Photos page.
+ */
+const Card: FC<CardProps> = ({ name, url, action }) => (
+  <Layout data-testid="testCard" onClick={action}>
     <img src={url} alt={name}></img>
     <Label>{name}</Label>
   </Layout>
