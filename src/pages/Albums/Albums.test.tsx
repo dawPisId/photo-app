@@ -10,6 +10,7 @@ import {
 import Albums from "./Albums";
 import React from "react";
 import { mockAlbumsData } from "../../MockAPIOutputs";
+import { mount } from "enzyme";
 
 //TODO: possibly move the Data consts to different files.
 
@@ -41,16 +42,19 @@ it("changes per page count", async () => {
     json: () => Promise.resolve(mockAlbumsData),
   });
   jest.spyOn(window, "fetch").mockImplementation(() => mockFetch as any);
-  await act(async () => {
-    const testRender = render(
-      <BrowserRouter>
-        <Route exact path="/" component={Albums} />
-      </BrowserRouter>
-    );
-    await waitFor(() => testRender.getAllByTestId("testAlbumCard"));
-    fireEvent.click(screen.getByTestId("testList"));
-    await waitFor(() => testRender.getAllByTestId("testListItem"));
-    fireEvent.click(screen.getAllByTestId("testListItem")[1]);
+  async () => {
+    let testRender;
+    act(async () => {
+      testRender = render(
+        <BrowserRouter>
+          <Route exact path="/" component={Albums} />
+        </BrowserRouter>
+      );
+      await waitFor(() => testRender.getAllByTestId("testAlbumCard"));
+      fireEvent.click(screen.getByTestId("testList"));
+      await waitFor(() => testRender.getAllByTestId("testListItem"));
+      fireEvent.click(screen.getAllByTestId("testListItem")[1]);
+    });
     testRender.rerender(
       <BrowserRouter>
         <Route exact path="/" component={Albums} />
@@ -58,5 +62,5 @@ it("changes per page count", async () => {
     );
     await waitFor(() => testRender.getAllByTestId("testAlbumCard"));
     expect(testRender.getAllByTestId("testAlbumCard").length).toEqual(16);
-  });
+  };
 });

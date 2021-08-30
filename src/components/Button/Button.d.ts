@@ -7,4 +7,8 @@ export interface ButtonProps {
   * Function called when the label is used.
   */
   action: () => void;
+  /**
+   * Choice between primary and secondary style.
+   */
+  theme:("primary" | "secondary")
 }

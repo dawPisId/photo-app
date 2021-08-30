@@ -14,8 +14,9 @@ const performFunction = (
 /**
  * Button component used mainly for the top search bar.
  */
-const Button: FC<ButtonProps> = ({ name, action }) => (
+const Button: FC<ButtonProps> = ({ name, action, theme }) => (
   <Wrapper
+    className={theme === "secondary" ? "secondary" : null}
     onClick={(e) => {
       performFunction(e, action);
     }}

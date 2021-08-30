@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Header = styled.div`
     margin-bottom: 1.5rem;
+    font-family: "Roboto", sans-serif;
 `
 
 export const Container = styled.div`

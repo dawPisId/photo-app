@@ -65,6 +65,7 @@ export const ItemCountList = styled.div`
 
 export const ItemCountListItem = styled.div`
   padding: 0.5rem 1.84rem 0.5rem 1.84rem;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   &:hover {
     background-color: ${colors.lightgrey};
@@ -85,8 +86,9 @@ export const ItemCountNumber = styled.div`
 export const ItemCountLabel = styled.span`
   position: absolute;
   background-color: ghostwhite;
+  font-family: "Roboto", sans-serif;
   color: grey;
-  top: -0.65rem;
-  left: 1rem;
+  top: -0.5rem;
+  left: 0.75rem;
   font-size: 0.75rem;
 `;

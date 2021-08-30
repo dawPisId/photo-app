@@ -4,4 +4,5 @@ export const colors = {
   grey: "#aaaaaa",
   semitransparent: "rgba(0, 0, 0, 0.7)",
   transparent: "rgba(255, 0, 0, 0)",
+  ghostwhite: "#F8F8FF"
 };
