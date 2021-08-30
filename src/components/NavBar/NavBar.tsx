@@ -1,10 +1,10 @@
 import { Container, Header, Logo } from "./NavBar.styled";
+import React, { FC } from "react";
 
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import NavItem from "../NavItem/NavItem";
 import PhotoAlbumIcon from "@material-ui/icons/PhotoAlbum";
 import PhotoIcon from "@material-ui/icons/Photo";
-import React from "react";
 
 const navData = [
   {
@@ -26,8 +26,10 @@ const navData = [
     icon: <AccountCircleIcon />,
   },
 ];
-
-const NavBar: React.FC = () => (
+/**
+ * Navigation bar component used as a header.
+ */
+const NavBar: FC = () => (
   <Header>
     <Container>
       <Logo>PHOTOS APP</Logo>

@@ -11,6 +11,7 @@ export const Container = styled.div`
 `;
 export const Label = styled.span`
   margin-right: auto;
+  font-family: "Roboto", sans-serif;
   @media (max-width: 620px) {
     flex-direction: column;
     margin: inherit;

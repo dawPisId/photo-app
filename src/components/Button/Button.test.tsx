@@ -6,7 +6,7 @@ import renderer from "react-test-renderer";
 
 it("renders correctly", () => {
   const tree = renderer
-    .create(<Button name="one" action={() => null} />)
+    .create(<Button name="one" action={() => null} theme="primary" />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
@@ -16,7 +16,7 @@ it("fires the onClick event correctly", () => {
   const tempFunc = () => {
     tempValue = "correct";
   };
-  render(<Button name="one" action={tempFunc} />);
+  render(<Button name="one" action={tempFunc} theme="primary"/>);
   fireEvent.click(screen.getByRole("button"));
   expect(tempValue).toMatch("correct");
 });

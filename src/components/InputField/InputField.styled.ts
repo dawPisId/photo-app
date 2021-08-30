@@ -36,9 +36,10 @@ export const InputBox = styled.input`
 `;
 export const InputLabel = styled.span`
   position: absolute;
+  font-family: "Roboto", sans-serif;
   color: grey;
   background-color: white;
-  top: -0.6rem;
+  top: -0.45rem;
   left: 0.6rem;
   font-size: 0.75rem;
 `;

@@ -17,6 +17,7 @@ export const Container = styled.div`
 export const SelectItem = styled.div`
   margin: 0.5rem;
   padding: 0.5rem 0.9rem;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   border-radius: 500px;
   &.active {

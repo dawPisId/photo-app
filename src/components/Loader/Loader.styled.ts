@@ -27,6 +27,7 @@ export const Label = styled.div`
   font-size: 1.5rem;
   display: block;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 `;
 
 export const Wrapper = styled.div`

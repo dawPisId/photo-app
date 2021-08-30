@@ -14,6 +14,11 @@ export const Wrapper = styled.button`
   @media (max-width: 620px) {
     margin: 1.5rem 0rem 1rem 0rem;
   }
+  &.secondary {
+    background-color: ${colors.ghostwhite};
+    border: 1px solid ${colors.white};
+    color: black;
+  }
 
   &:active {
     background-color: ${colors.lightgrey};

@@ -34,7 +34,7 @@ exports[`renders correctly 1`] = `
     />
   </div>
   <button
-    className="sc-dlnjwi JdFzn"
+    className="sc-dlnjwi jqLZef"
     onClick={[Function]}
   >
     SEARCH

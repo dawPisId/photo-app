@@ -6,13 +6,13 @@ import {
   SectionHeader,
   SectionLayout,
 } from "./ProfileLayout.styled";
+import React, { FC } from "react";
 
 import InputField from "../InputField/InputField";
 import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
 import { ProfileLayoutProps } from "./ProfileLayout.d";
-import React from "react";
 
-const ProfileLayout: React.FC<ProfileLayoutProps> = ({ user }) => {
+const ProfileLayout: FC<ProfileLayoutProps> = ({ user }) => {
   const personal = [
     { name: "Name", value: user.name },
     { name: "Phone", value: user.phone },
