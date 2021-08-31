@@ -1,6 +1,6 @@
+import { BrowserRouter, MemoryRouter, Route } from "react-router-dom";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
-import { BrowserRouter } from "react-router-dom";
 import Profile from "./Profile";
 import React from "react";
 
@@ -11,9 +11,11 @@ export default {
 } as ComponentMeta<typeof Profile>;
 
 const Template: ComponentStory<typeof Profile> = (args) => (
-  <BrowserRouter>
-    <Profile />
-  </BrowserRouter>
+    <MemoryRouter initialEntries={["/profile/1"]}>
+      <Route path="/profile/:id">
+        <Profile />
+      </Route>
+    </MemoryRouter>
 );
 
 export const Main = Template.bind({});
